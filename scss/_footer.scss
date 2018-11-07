@@ -1,13 +1,30 @@
 footer {
     display: flex;
     width: 100%;
-    border-top: solid black 20px;
+    border-top: solid black 1px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+
+    .copyright {
+        flex-grow: 4;
+    }
 
     ul {
+        flex-grow: 1;
         list-style: none;
     }
 
     ul li {
+        display: inline;
         list-style: none;
+        text-decoration: none;
     }
+
+    ul li a {
+        text-decoration: none;
+        padding-right: 10px;
+    }
+
 }
