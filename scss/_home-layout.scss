@@ -1,0 +1,23 @@
+.wrapper-home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a b c c c"
+    "a b c c c"
+    "d e e e d"
+    "d e e e d";
+
+    .call-to-action {
+        grid-area: a;
+    }
+    
+    .slide-show {
+        grid-area: c;
+    }
+    
+    .map {
+        grid-area: e;
+    }
+}
+
