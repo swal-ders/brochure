@@ -1,16 +1,60 @@
 .wrapper-home {
+    margin: 5% 0 0 5%;
     display: grid;
+    grid-gap: 10%;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
-    "a a c c c";
+    "a a b b b";
 
     .call-to-action {
         grid-area: a;
+        display: block;
+    
+
+        .slogan {
+            font-size: 65px;
+        }
+
+        .sub-header {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+
+        .book-now {
+            width: 100%;
+            height: 40px;
+        }
+
+        .legal {
+            display: grid;
+            grid-gap: 5px;
+            padding-top: 5px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: 
+            "a b";
+            
+
+            .priv-pol{
+                grid-area: a;
+            } 
+        
+            .term-con {
+                grid-area: b;
+            }
+            
+        }
+
     }
     
-    .slide-show {
-        grid-area: c;
+    .cycle-slideshow {
+        grid-area: b;
+        width: 100%;
     }
 }
 
