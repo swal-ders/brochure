@@ -7,6 +7,7 @@
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(1, 1fr);
 	grid-template-areas: 'a a b b b';
+	border-top: 7px solid whitesmoke;
 
 	.call-to-action {
 		grid-area: a;
@@ -14,36 +15,76 @@
 
 		.slogan {
 			font-size: 65px;
+			font-family: $heading-font;
+			padding-bottom: 10px;
 		}
 
 		.sub-header {
 			font-size: 36px;
+			font-family: $body-font;
+			padding-bottom: 10px;
 		}
 
 		p {
 			font-size: 20px;
 			padding-bottom: 5px;
+			font-family: $body-font;
+			padding-bottom: 10px;
+			line-height: 1.3;
+		}
+
+		.sub-p {
+			border-bottom: 3px solid whitesmoke;
+			padding-bottom: 20px;
 		}
 
 		.book-now {
 			width: 100%;
+			margin-left: 127.5px;
 			height: 40px;
+			font-family: $body-font;
+			margin: 20px 0;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+			@include link;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
 		}
 
 		.legal {
 			display: grid;
-			grid-gap: 5px;
+			grid-gap: 20px;
 			padding-top: 5px;
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(1, 1fr);
 			grid-template-areas: 'a b';
+			font-family: $body-font;
+			text-transform: uppercase;
+			font-weight: bold;
 
 			.priv-pol {
 				grid-area: a;
+				font-family: $body-font;
+				text-transform: uppercase;
+				font-weight: bold;
+				@include link;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
 			}
 
 			.term-con {
 				grid-area: b;
+				font-family: $body-font;
+				text-transform: uppercase;
+				font-weight: bold;
+				@include link;
+				padding: 10px;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
 			}
 		}
 	}
