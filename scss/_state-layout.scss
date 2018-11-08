@@ -34,24 +34,28 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+        'a b';
 
         .profiles {
-            grid-area: d;
+            grid-area: a;
             display: grid;
             column-gap: 5%;
             row-gap: 2.5%;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
 
             // .p1, .p2, .p3, .p4 {
             // }
         }
 
         .state-map {
+            grid-area: b;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(1, 1fr);
-            height: 100vh;
+            height: 90vh;
+            margin-left: 15%;
         }
     } 
     .app {   
