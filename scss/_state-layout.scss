@@ -2,7 +2,7 @@
     margin: 0 10% 0 10%;
     height: 120vh;
     display: grid;
-    column-gap: 0.5%;
+    column-gap: 5%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: (5, 0.25fr .25fr 2fr 2fr .5fr);
     grid-template-areas:
@@ -13,10 +13,10 @@
     'e e b b';
     
     .search-filter {
-        border: solid pink 5px;
         grid-area: a;
         display: flex;
         justify-content: space-evenly;
+        border: solid black 1px;
 
         button {
             max-height: 20px;
@@ -26,32 +26,27 @@
     }
     
     .state-slogan {
-        border: solid blue 5px;
         grid-area: c;
     }
 
     .profiles {
         grid-area: d;
         display: grid;
-        column-gap: 10%;
+        column-gap: 5%;
         row-gap: 2.5%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        border: solid green 5px;
 
-        .p1, .p2, .p3, .p4 {
-            border: solid tomato 5px;
-        }
+        // .p1, .p2, .p3, .p4 {
+        // }
 
     }
 
     .state-map {
-        border: solid orchid 5px;
         grid-area: b;
     }
 
     .app {   
-        border: solid khaki 5px;
         grid-area: e;
         display: grid;
         grid-template-columns: (2, 1fr .3fr);
