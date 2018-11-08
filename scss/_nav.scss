@@ -26,10 +26,11 @@
 	padding: 20px 20px;
 	text-decoration: none;
 	color: black;
-	font-family: 'K2D', sans-serif;
+	font-family: $body-font;
 	font-size: 1em;
 	line-height: 30px;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .header li a:hover,
@@ -40,13 +41,13 @@
 .header .logo {
 	display: block;
 	float: left;
-	font-size: 2em;
+	font-size: 4em;
 	line-height: 70px;
 	padding: 0px 20px;
 	margin: auto;
 	text-decoration: none;
 	color: black;
-	font-family: 'Abril Fatface', cursive;
+	font-family: $heading-font;
 }
 
 /* menu */
