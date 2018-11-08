@@ -1,0 +1,61 @@
+.state-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: (5, .25fr .25fr 1fr 1fr .5fr);
+    grid-template-areas:
+    'a a b b'
+    'c c b b'
+    'd d b b'
+    'd d b b'
+    'e e b b';
+    
+    .search-filter {
+        background: orange;
+        border: solid pink 5px;
+        grid-area: a;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .state-slogan {
+        border: solid blue 5px;
+        grid-area: c;
+    }
+
+    .profiles {
+        grid-area: d;
+        display: grid;
+        column-gap: 10%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        border: solid green 5px;
+
+        .p1, .p2, .p3, .p4 {
+            border: solid tomato 5px;
+        }
+
+    }
+
+    .state-map {
+        border: solid orchid 5px;
+        grid-area: b;
+    }
+
+    .app {   
+        border: solid khaki 5px;
+        grid-area: e;
+        display: grid;
+        grid-template-columns: (2, 1fr .3fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas:
+        'a b'
+        'c b'
+        'd b';
+
+        .app-title {
+            grid-area: a;
+        }
+    }
+}
