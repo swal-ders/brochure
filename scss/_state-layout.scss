@@ -28,6 +28,14 @@
     
     .state-slogan {
         grid-area: c;
+
+        h1 {
+            $heading-font;
+        }
+
+        p {
+            $heading-font;
+        }
     }
 
     .group {
