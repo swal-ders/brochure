@@ -30,11 +30,11 @@
         grid-area: c;
 
         h1 {
-            $heading-font;
+            font-family: $heading-font;
         }
 
         p {
-            $heading-font;
+           font-family: $heading-font;
         }
     }
 
