@@ -1,19 +1,9 @@
 .state-wrapper {
     margin: 0 10% 0 10%;
-    height: 100vh;
-    display: grid;
-    column-gap: 5%;
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: (5, 0.25fr .25fr 2fr 2fr .5fr);
-    // grid-template-areas:
-    // 'a a b b'
-    // 'c c b b'
-    // 'd d b b'
-    // 'd d b b'
-    // 'e e b b';
+    height: 100vh;;
     
     .search-filter {
-        grid-area: a;
+        
         display: flex;
         justify-content: space-evenly;
         border: solid black 1px;
@@ -27,7 +17,7 @@
     }
     
     .state-slogan {
-        grid-area: c;
+        
 
         h1 {
             font-family: $heading-font;
@@ -41,7 +31,7 @@
     .group {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-rows: auto;
         grid-template-areas:
         'a b';
 
@@ -67,7 +57,7 @@
         }
     } 
     .app {   
-        grid-area: e;
+       
         display: grid;
         grid-template-columns: (4, 1fr .3fr);
         grid-template-rows: repeat (3, 1fr);
@@ -102,13 +92,22 @@
     }
 }
 
-.p1{
-    position: relative;
-    display: none;
-}
 
-.center{
-    position: absolute;
-    top: 0;
-    left: 0;
+.cycle-slideshow{
+    position: relative;
+
+    .center a {
+        color: rgba(245, 245, 245, 0.452);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+        &:first-child {
+            left: 8px;
+        }
+        &:last-child {
+            right: 8px;
+        }
+    }
+
 }
