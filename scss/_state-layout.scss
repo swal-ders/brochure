@@ -1,7 +1,7 @@
 .state-wrapper {
     margin: 0 10% 0 10%;
     height: 100vh;
-    display: block;
+    display: grid;
     column-gap: 5%;
     // grid-template-columns: repeat(4, 1fr);
     // grid-template-rows: (5, 0.25fr .25fr 2fr 2fr .5fr);
@@ -100,4 +100,15 @@
             grid-area: f;
         }
     }
+}
+
+.p1{
+    position: relative;
+    display: none;
+}
+
+.center{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
