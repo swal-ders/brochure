@@ -1,31 +1,32 @@
 footer {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    border-top: solid black 1px;
-    background-color: #DFE3DF;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	border-top: 3px solid whitesmoke;
+	background-color: #dfe3df;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	font-family: $body-font;
 
-    .copyright {
-        flex-grow: 4;
-    }
+	.copyright {
+		flex-grow: 4;
+	}
 
-    ul {
-        flex-grow: 1;
-        list-style: none;
-    }
+	ul {
+		flex-grow: 1;
+		list-style: none;
+	}
 
-    ul li {
-        display: inline;
-        list-style: none;
-        text-decoration: none;
-    }
+	ul li {
+		display: inline;
+		list-style: none;
+		text-decoration: none;
+	}
 
-    ul li a {
-        text-decoration: none;
-        padding-right: 10px;
-    }
-
+	ul li a {
+		text-decoration: none;
+		padding-right: 10px;
+		color: black;
+	}
 }
