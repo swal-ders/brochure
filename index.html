@@ -387,6 +387,70 @@
 				</g>
 			</svg>
 		</div>
+		<div class="book-pop-up">
+			<form action="#0" method="post" name="book" class="booking-form" id="booking-form">
+				<label for="first-name">First Name:</label>
+				<input type="text" id="first-name" name="firs-name" required>
+
+				<label for="last-name">Last Name:</label>
+				<input type="text" id="last-name" name="last-name" required>
+
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone"
+       			pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				
+				<label for="start">Start date:</label>
+				<input type="date" id="start" name="trip-start"
+						value=""
+						min="2018-01-01" max="2019-12-31">
+				<label for="end">Start date:</label>
+
+				<input type="date" id="end" name="trip-end"
+						value=""
+						min="2018-01-01" max="2019-12-31">
+
+				<div class="camp-type">
+					<h3>Select Camp Style:</h3>
+					
+					<input type="checkbox" id="tent" value="tent" name="tent" checked>
+					<label for="tent">Tent</label>
+					
+					<input type="checkbox" id="camper" value="camper" name="camper">
+					<label for="camper">Camper</label>
+
+					<input type="checkbox" id="rv" value="rv" name="rv">
+					<label for="rv">RV</label>                        
+				</div>
+				<div class="dog">
+				<h3>Dog Friendly</h3>
+				
+				<input type="radio" id="yes" name="yes" value="dog" checked>
+				<label for="yes">Yes</label>
+
+				<input type="radio" id="no" name="no"  value="dog">
+				<label for="no">No</label>
+				</div>
+
+				<label for="campers">Number of Campers:</label>
+				<select name="campers">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+
+				<label for="comments">Comments: </label>
+				<br>
+				<textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
 		<!-- Footer -->
 		<footer>
 			<div class="copyright">&copy; Alex Engel & Shane Walders</div>
