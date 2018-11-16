@@ -30,7 +30,7 @@
 
     .group {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 5fr);
         grid-template-rows: auto;
         grid-template-areas:
         'a b';
@@ -48,11 +48,15 @@
         }
 
         .state-map {
-            grid-area: b;
+            // grid-area: b;
+
+            // background: red;
+
             // display: grid;
             // grid-template-columns: repeat(1, 1fr);
             // grid-template-rows: repeat(1, 1fr);
-
+            padding-top: 10%;
+            
             position: -webkit-sticky; /* Safari */
             position: sticky;
             top: 0;
@@ -93,7 +97,6 @@
         p {
             font-family: $body-font;
             text-indent: 10px;
-            background: red;
         }
     
         .bread-crumb{
