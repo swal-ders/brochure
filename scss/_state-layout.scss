@@ -30,6 +30,9 @@
         }
     }
 
+
+// Styling for all of the location profiles
+
     .group {
         display: grid;
         grid-template-columns: repeat(2, 5fr);
@@ -49,25 +52,54 @@
 
                 h2 {
                     font-size: 150%;
+                    font-family: $heading-font;
+                }
+
+                p {
+                    font-family: $body-font;
+                    text-indent: 10px;
                 }
 
                 .reservation {
-                    font-weight: bold; 
+                    font-weight: bold;
+                    color: black;
                 }
                 
                 .bread-crumb{
                     font-style: italic;
                 }
 
-            }
-            .app {   
-                margin-top: 50px;
-                overflow: scroll;
-                display: block;
-                height: 33.33vh;
-            }
+                .cycle-slideshow{
         
+                    position: relative;
+                
+                    .center a {
+                        color: rgba(245, 245, 245, 0.452);
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 101;
+
+                        &:first-child {
+                            left: 8px;
+                        }
+                        &:last-child {
+                            right: 8px;
+                        }
+                    }
+                }   
+                
+                .app {   
+                    margin-top: 50px;
+                    overflow: scroll;
+                    display: block;
+                    height: 33.33vh;
+                }
+            }
         }
+
+
+// Styling for the map
 
         .state-map {
             padding-top: 10%;
@@ -77,99 +109,6 @@
             height: 90vh;
             padding: 0 0 0 15%;
             padding: 0 0 0 15%;
-        }
-    } 
-
-    .p1, .p2, .p3, .p4{
-    
-
-        .cycle-slideshow{
-        
-            position: relative;
-        
-            .center a {
-                color: rgba(245, 245, 245, 0.452);
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 101;
-                    &:first-child {
-                        left: 8px;
-                    }
-                    &:last-child {
-                        right: 8px;
-                    }
-            }
-        
-            }   
-        h2 {
-            
-            font-family: $heading-font;
-        }
-    
-        p {
-            font-family: $body-font;
-            text-indent: 10px;
-        }
-    
-        .bread-crumb{
-            
-        }
-    
-        .reservation {
-            
-            color: black;
-        }
-    
-        .description{
-            
-        }
+        } 
     }
-
-
 }
-
-// .p1, .p2, .p3, .p4{
-    
-
-// .cycle-slideshow{
-
-//     position: relative;
-
-//     .center a {
-//         color: rgba(245, 245, 245, 0.452);
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-//         z-index: 101;
-//             &:first-child {
-//                 left: 8px;
-//             }
-//             &:last-child {
-//                 right: 8px;
-//             }
-//         }
-
-//     }   
-//     h2 {
-     
-//         font-family: $heading-font;
-//     }
-
-//     p {
-//         font-family: $body-font;
-//     }
-
-//     .bread-crumb{
-        
-//     }
-
-//     .reservation {
-       
-//         color: black;
-//     }
-
-//     .description{
-        
-//     }
-// }
