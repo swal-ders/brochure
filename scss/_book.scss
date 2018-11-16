@@ -16,7 +16,7 @@
 	}
 
 	.booking-form {
-		width: 345px;
+		max-width: 308px;
 		height: auto;
 		background-color: white;
 		z-index: 100;
@@ -25,8 +25,18 @@
 		font-family: $heading-font;
 		font-size: 1.3em;
 		border-radius: 5px;
-		padding: 20px;
+		padding: 5px;
 		// border:  solid 7px;
+
+		input,
+		textarea,
+		select {
+			border: 2px solid #226c8196;
+			padding: 4px 0 4px 0;
+			border-radius: 5px;
+			font-family: $body-font;
+			outline: none;
+		}
 
 		.form-top {
 			padding: 10px;
@@ -34,7 +44,7 @@
 
 		.form-top label {
 			display: block;
-			margin-bottom: 5px;
+			margin: 5px 0 2px 0;
 		}
 		.date {
 			padding: 10px;
@@ -68,7 +78,7 @@
 		}
 
 		select {
-			padding-top: 0px;
+			padding-top: 3px;
 			font-weight: bold;
 			font-size: 0.9em;
 		}
@@ -92,5 +102,26 @@
 			border-radius: 5px;
 			margin: 0 0 10px 10px;
 		}
+		.cancel {
+			font-family: $body-font;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.1em;
+			// @include link;
+			padding: 15px;
+			border: none;
+			border-radius: 5px;
+			margin: 0 0 10px 10px;
+
+			:hover {
+				background-color: #226c8196;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.book-pop-up {
+		position: absolute;
 	}
 }

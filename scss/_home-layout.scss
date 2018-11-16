@@ -7,20 +7,30 @@
 	.wrapper-home {
 		max-width: 1500px;
 		margin: auto;
-		padding: 80px 0;
+		padding: 80px 20px;
 		display: grid;
 		grid-gap: 5%;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-		grid-template-areas: 'a a b b b';
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(1, auto);
+		// grid-template-areas: 'a a b b b';
 		// border-top: 7px solid whitesmoke;
 
 		.call-to-action {
-			grid-area: a;
-			display: block;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			.logos {
+				font-size: 30px;
+				padding: 40px 0 0 0;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
 
 			.slogan {
-				font-size: 65px;
+				font-size: 60px;
 				font-family: $heading-font;
 				padding-bottom: 10px;
 			}
@@ -43,7 +53,16 @@
 				border-bottom: 3px solid whitesmoke;
 				padding-bottom: 20px;
 			}
+		}
 
+		.cycle-slideshow {
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			overflow: hidden;
+		}
+		.buttons {
 			.book-now {
 				width: 100%;
 				margin-left: 127.5px;
@@ -60,12 +79,12 @@
 			}
 
 			.legal {
-				display: grid;
-				grid-gap: 20px;
+				// display: grid;
+				// grid-gap: 20px;
 				padding-top: 5px;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(1, 1fr);
-				grid-template-areas: 'a b';
+				// grid-template-columns: repeat(2, 1fr);
+				// grid-template-rows: repeat(1, 1fr);
+				// grid-template-areas: 'a b';
 				font-family: $body-font;
 				text-transform: uppercase;
 				font-weight: bold;
@@ -73,18 +92,21 @@
 				padding-bottom: 20px;
 
 				.priv-pol {
-					grid-area: a;
+					// grid-area: a;
+					width: 49%;
 					font-family: $body-font;
 					text-transform: uppercase;
 					font-weight: bold;
 					@include link;
-					padding: 10px;
+					padding: 10px 26px;
 					border: none;
 					border-radius: 5px;
 				}
 
 				.term-con {
-					grid-area: b;
+					// grid-area: b;
+					width: 49%;
+
 					font-family: $body-font;
 					text-transform: uppercase;
 					font-weight: bold;
@@ -96,10 +118,29 @@
 				}
 			}
 		}
+	}
+}
 
-		.cycle-slideshow {
-			grid-area: b;
-			width: 100%;
+@media only screen and (max-width: 1100px) {
+	.home {
+		.wrapper-home {
+			padding: 40px 20px;
+			.cycle-slideshow {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+			.call-to-action {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				grid-row-start: 2;
+				grid-row-end: 3;
+
+				.logos {
+					font-size: 25px;
+				}
+			}
 		}
 	}
 }

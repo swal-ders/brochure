@@ -10,7 +10,7 @@
 	margin: auto;
 	max-width: 1500px;
 	height: 70px;
-	z-index: 3;
+	z-index: 1000;
 }
 
 .header ul {
@@ -19,6 +19,7 @@
 	list-style: none;
 	overflow: hidden;
 	background-color: #dfe3df;
+	z-index: 1000;
 }
 
 .header li a {
@@ -33,6 +34,7 @@
 	font-weight: bold;
 	background-color: #dfe3df;
 	@include link;
+	z-index: 1000;
 }
 
 // .header li a:hover,
@@ -43,9 +45,9 @@
 .header .logo {
 	display: block;
 	float: left;
-	font-size: 4em;
+	font-size: 60px;
 	line-height: 70px;
-	padding: 0px 20px;
+	padding: 0px 0 0 20px;
 	margin: auto;
 	text-decoration: none;
 	color: black;
@@ -128,7 +130,7 @@ label.menu-icon {
 	top: 0;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 995px) {
 	.header li {
 		float: left;
 	}
