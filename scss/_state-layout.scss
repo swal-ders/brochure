@@ -1,5 +1,6 @@
 .state-wrapper {
     margin: 0 10% 0 10%;
+    background-color: red;
     // height: 100vh;
     
     .state-slogan {
@@ -16,16 +17,23 @@
         }
 
         .search-filter {
-        
             display: flex;
             justify-content: space-evenly;
             margin-bottom: 2.5%;
             width: 50%;
-    
+
             button {
                 max-height: 20px;
                 margin: auto;
                 flex-basis: 100%;
+            }
+
+            button:nth-child(3){
+                min-width: 148px;
+            }
+
+            button:nth-child(4){
+                min-width: 89px;
             }
         }
     }
@@ -34,7 +42,7 @@
 // Styling for all of the location profiles
 
     .group {
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2, 5fr);
         grid-template-rows: auto;
         grid-template-areas:
@@ -177,6 +185,13 @@
 @media (max-width: 1480px){
     .state-wrapper {
         
+        .group{
+
+            .profiles{
+
+                display: flex;
+            }
+
         .state-slogan {
     
             .search-filter {
@@ -196,52 +211,58 @@
     }   
 }
 
-@media (max-width: 740px){
-
-    .state-wrapper {
-
-        .group {
-
-            grid-template-areas:
-            'a a';
-
-            .state-map {
-
-                display: none;
-            }
-
-        }
-    }
-
-}
-
 @media (max-width: 442px) {
 
     .state-wrapper{
 
+        background-color: black;
+
         .group{
 
-            display: inline-block;
-
+            display: none;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd'
+            'e';
+            
             .profiles{
 
+                display: none;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas:
+                'a'
+                'b'
+                'c'
+                'd'
+                'e';
+
                 div:nth-child(1){
+                    grid-area: a;
                     width: 100%;
                 }
     
                 div:nth-child(2){
+                    grid-area: b;
                     width: 100%;
                 }
     
                 div:nth-child(3){
+                    grid-area: c;
                     width: 100%;
                 }
     
                 div:nth-child(4){
+                    grid-area: d;
                     width: 100%;
                 }
     
                 div:nth-child(5){
+                    grid-area: e;
                     width: 100%;
                 }
             }
