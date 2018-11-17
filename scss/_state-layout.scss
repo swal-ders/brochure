@@ -1,6 +1,5 @@
 .state-wrapper {
     margin: 0 10% 0 10%;
-    // height: 100vh;
     
     .state-slogan {
         margin-top: 5%;
@@ -37,13 +36,13 @@
         }
     }
 
-
 // Styling for all of the location profiles
 
     .group {
         display: grid;
         grid-template-columns: repeat(2, 5fr);
         grid-template-rows: auto;
+        column-gap: 5%;
         grid-template-areas:
         'a b';
 
@@ -176,35 +175,62 @@
             position: sticky;
             top: 0;
             height: 100vh;
-            padding-left: 15%;
+            // padding-left: 15%;
         } 
     }
 }
 
 @media (max-width: 1480px){
-        .state-wrapper {
+
+    .state-wrapper {
+
+        .state-slogan {
+    
+            .search-filter {
             
-            .group{
-
-                .profiles{
-
-                    display: flex;
-                }
-
-            .state-slogan {
+                width: 100%;
+            }
+        }
         
-                .search-filter {
-                
-                    display: flex;
-                    justify-content: space-evenly;
-                    margin-bottom: 2.5%;
+        .group{
+
+            display: grid;
+
+            .profiles{
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas:
+                'a'
+                'b'
+                'c'
+                'd'
+                'e';
+
+                div:nth-child(1){
+                    grid-area: a;
                     width: 100%;
-            
-                    button {
-                        max-height: 20px;
-                        margin: auto;
-                        flex-basis: 100%;
-                    }
+                }
+    
+                div:nth-child(2){
+                    grid-area: b;
+                    width: 100%;
+                }
+    
+                div:nth-child(3){
+                    grid-area: c;
+                    width: 100%;
+                }
+    
+                div:nth-child(4){
+                    grid-area: d;
+                    width: 100%;
+                }
+    
+                div:nth-child(5){
+                    grid-area: e;
+                    width: 100%;
                 }
             }
         }   
@@ -264,6 +290,11 @@
                     width: 100%;
                 }
             }
+
+            .state-map {
+                
+                display: none;
+            } 
         }
     }
 }
