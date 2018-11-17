@@ -1,6 +1,5 @@
 .state-wrapper {
     margin: 0 10% 0 10%;
-    background-color: red;
     // height: 100vh;
     
     .state-slogan {
@@ -42,7 +41,7 @@
 // Styling for all of the location profiles
 
     .group {
-        display: none;
+        display: grid;
         grid-template-columns: repeat(2, 5fr);
         grid-template-rows: auto;
         grid-template-areas:
@@ -183,32 +182,33 @@
 }
 
 @media (max-width: 1480px){
-    .state-wrapper {
-        
-        .group{
-
-            .profiles{
-
-                display: flex;
-            }
-
-        .state-slogan {
-    
-            .search-filter {
+        .state-wrapper {
             
-                display: flex;
-                justify-content: space-evenly;
-                margin-bottom: 2.5%;
-                width: 100%;
+            .group{
+
+                .profiles{
+
+                    display: flex;
+                }
+
+            .state-slogan {
         
-                button {
-                    max-height: 20px;
-                    margin: auto;
-                    flex-basis: 100%;
+                .search-filter {
+                
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 2.5%;
+                    width: 100%;
+            
+                    button {
+                        max-height: 20px;
+                        margin: auto;
+                        flex-basis: 100%;
+                    }
                 }
             }
-        }
-    }   
+        }   
+    }
 }
 
 @media (max-width: 442px) {
@@ -219,7 +219,7 @@
 
         .group{
 
-            display: none;
+            display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(5, 1fr);
             grid-template-areas:
@@ -231,7 +231,7 @@
             
             .profiles{
 
-                display: none;
+                display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(5, 1fr);
                 grid-template-areas:
