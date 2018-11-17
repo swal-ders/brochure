@@ -21,7 +21,7 @@
 			</label>
 			<ul class="menu">
 				<li>
-					<a href="#0">Request a reservation</a>
+					<a class="book-now" href="#0">Request a reservation</a>
 				</li>
 				<li>
 					<a href="#0">Washington</a>
@@ -53,12 +53,12 @@
             <h1>Oregon Exploration</h1>
             <p>Discover the Wild West</p>
                     <!-- Filter -->
-        <div class="search-filter">
-            <button class="bs">States</button>
-            <button class="bp">Parks</button>
-            <button class="brar">Request a Reservation</button>
-            <button class="bcu">Contact Us</button>
-        </div>
+            <div class="search-filter">
+                <button class="bs">States</button>
+                <button class="bp">Parks</button>
+                <button class="book-now" class="brar">Request a Reservation</button>
+                <button class="bcu">Contact Us</button>
+            </div>
         </div>
         <div class="group">
 
@@ -169,8 +169,8 @@
         <!-- Brick -->
             <div class="app">
                 <p class="app-title">Join the online community</p>
-                <p class="cta">Join the <span> Camping Website App </span> and make connections with travelers across America!</p>
-                <a class="google" href='https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+                <p class="cta">Join the <span> Camping Website App </span> and make connections with travelers across America! <br> <a class="google" href='https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></p>
+
             </div>
         </div>
         
@@ -182,6 +182,129 @@
         </div>
         </div>
 
+    </div>
+    <div class="book-pop-up">
+        <form
+            action="#0"
+            method="post"
+            name="book"
+            class="booking-form"
+            id="booking-form"
+        >
+            <div class="form-top">
+                <label for="first-name">First Name:</label>
+                <input
+                    type="text"
+                    id="first-name"
+                    name="firs-name"
+                    required
+                />
+
+                <label for="last-name">Last Name:</label>
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                />
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+            </div>
+
+            <div class="date">
+                <label for="start">Start date:</label>
+                <label class="end-label" for="end">End date:</label> <br />
+                <input
+                    type="date"
+                    id="start"
+                    name="trip-start"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+
+                <input
+                    class="end"
+                    type="date"
+                    id="end"
+                    name="trip-end"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+            </div>
+            <div class="camp-type">
+                <h3>Select Camp Style:</h3>
+
+                <input
+                    type="checkbox"
+                    id="tent"
+                    value="tent"
+                    name="tent"
+                    checked
+                />
+                <label for="tent">Tent</label>
+
+                <input
+                    type="checkbox"
+                    id="camper"
+                    value="camper"
+                    name="camper"
+                />
+                <label for="camper">Camper</label>
+
+                <input type="checkbox" id="rv" value="rv" name="rv" />
+                <label for="rv">RV</label>
+            </div>
+            <div class="dog">
+                <h3>Dog Friendly:</h3>
+
+                <input
+                    type="radio"
+                    id="yes"
+                    name="yes"
+                    value="dog"
+                    checked
+                />
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="no" value="dog" />
+                <label for="no">No</label>
+            </div>
+
+            <label class="campers" for="campers">Number of Campers:</label>
+            <select name="campers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br />
+            <div class="comments">
+                <label for="comments">Comments: </label> <br />
+                <textarea
+                    name="comments"
+                    id="comments"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+                <br />
+            </div>
+            <input class="submit" type="submit" value="Submit" />
+            <input class="cancel" type="submit" value="Cancel" />
+        </form>
     </div>
 </main>
         <!-- Footer -->
@@ -200,5 +323,11 @@
             </ul>
             </nav>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+></script>
+<script src="scripts/camp.js"></script>
 </body>
 </html>
