@@ -9,7 +9,7 @@
 		margin: auto;
 		padding: 80px 20px;
 		display: grid;
-		grid-gap: 5%;
+		grid-gap: 40px;
 		grid-template-columns: repeat(3, auto);
 		grid-template-rows: repeat(1, auto);
 		// grid-template-areas: 'a a b b b';
@@ -60,6 +60,7 @@
 			grid-column-end: 4;
 			grid-row-start: 1;
 			grid-row-end: 2;
+
 			overflow: hidden;
 		}
 		.buttons {
@@ -106,7 +107,6 @@
 				.term-con {
 					// grid-area: b;
 					width: 49%;
-
 					font-family: $body-font;
 					text-transform: uppercase;
 					font-weight: bold;
@@ -115,6 +115,7 @@
 					padding: 10px;
 					border: none;
 					border-radius: 5px;
+					float: right;
 				}
 			}
 		}
@@ -125,6 +126,7 @@
 	.home {
 		.wrapper-home {
 			padding: 40px 20px;
+			grid-gap: 20px;
 			.cycle-slideshow {
 				grid-column-start: 1;
 				grid-column-end: 4;
@@ -139,6 +141,7 @@
 
 				.logos {
 					font-size: 25px;
+					// padding-bottom: 30px;
 				}
 			}
 		}
