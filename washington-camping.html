@@ -4,103 +4,347 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Washington Camping</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                Camping Website
-            </li>
-            <li>
-                States
-            </li>
-            <li>
-                Parks
-            </li>
-        </ul>
-    </nav>
-    <div class="state-wrapper">
+	<!-- Nav -->
+	<div class="header-wrapper">
+		<header class="header">
+			<a href="index.html" class="logo">Camping</a>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn">
+				<span class="navicon"></span>
+			</label>
+			<ul class="menu">
+				<li>
+					<a class="book-now" href="#0">Request a reservation</a>
+				</li>
+				<li>
+					<a href="#0">Washington</a>
+				</li>
+				<li>
+					<a href="#0">Oregon</a>
+				</li>
+				<li>
+					<a href="#0">California</a>
+				</li>
+			</ul>
+		</header>
+    </div>
+    
 
-        <!-- Filter -->
-        <div class="search-filter">
-            <button>States</button>
-            <button>Parks</button>
-            <button>Request a Reservation</button>
-            <button>Contact Us</button>
-        </div>
+<main>
+    <div class="state-wrapper">
 
         <!-- Title -->
         <div class="state-slogan">
-            <h1>Washington Slogan</h1>
-            <p>Discover the Evergreen State</p>
+            <h1 class="state">Discover Washington</h1>
+            <p>The Evergreen State</p>
+                    <!-- Filter -->
+            <div class="search-filter">
+                <button class="bs">States</button>
+                <button class="bp">Parks</button>
+                <button class="book-now" class="brar">Request a Reservation</button>
+                <button class="bcu">Contact Us</button>
+            </div>
         </div>
+        <div class="group">
 
         <!-- Campsite Profiles -->
-        <div class="p1">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p2">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p3">
-                <img src="" alt="">
-                <h2>Campsite Option</h2>
-                <p>Request a Reservation</p>
-                <a href=""><img src="" alt="">CALENDAR ICON</a>
-                <p class="bread-crumb"> Washington > Park Name</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p4">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
+        <!-- Profile #1 -->
+        <div class="profiles">
+            <div class="p1">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p1-prev"
+                data-cycle-next="#p1-next">
+                    <img src="media/images/washington/mt-baker/baker-camp.jpg" alt="Baker Camp">
+                    <img src="media/images/washington/mt-baker/baker-lake.jpg" alt="Baker Lake">
+                    <img src="media/images/washington/mt-baker/castiron.jpg" alt="Cooking over a fire">
+                    <img src="media/images/washington/mt-baker/sboqualmie-falls.jpg" alt="Sboqualmie Falls">
+                
+                    <div class="center">
+                        <a href=# id="p1-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                        <a href=# id="p1-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h2> Mount Baker</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a><br></p>
+                    <p class="bread-crumb"> Washington <i class="fas fa-chevron-right fa-xs"></i></i> Mount Baker  <br>  <i class="fas fa-campground fa-xs"></i> <i class="fas fa-snowflake fa-xs"></i> <i class="fas fa-tree fa-xs"></i> <i class="fas fa-mountain fa-xs"></i></p>
+                    <p class="description">Mt. Baker offers outdoor enthusiasts a spectacular experience all year round. The sheer size and magnitude allows for many walking trails and intensive hikes for outdoor enthusiasts of all levels. Hiking around and on Mt. Baker is a must do for all hiking newbies and fanatics. The trails have mind-blowing views and spring is a great season to complete a hike here due to the temperature and the beauty that will surround you; whether you’re looking for a hike to do with your family, friends or partner.</p>
+                </div>
+            </div>
+
+        <!-- Profile #2 -->
+            <div class="p2">
+                <div class="cycle-slideshow"
+                    data-cycle-fx="scrollHorz"
+                    data-cycle-timeout="0"
+                    data-cycle-prev="#p2-prev"
+                    data-cycle-next="#p2-next">
+                    <img src="media/images/washington/mt-rainer/mt-rainer-2.jpg" alt="Mount Rainer">
+                    <img src="media/images/washington/mt-rainer/mt-rainer.jpg" alt="Mount Rainer">
+                    <img src="media/images/washington/mt-rainer/rainer-camping.jpg" alt="A tent at the top of Mt Rainer">
+                    <img src="media/images/washington/mt-rainer/rainer-lake.jpg" alt="Rainer Lake">
+                
+                <div class="center">
+                    <a href=# id="p2-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p2-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+
+                </div>
+                <div class="bio">
+                    <h2>Mount Rainer</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Washington <i class="fas fa-chevron-right fa-xs"></i> Mount Rainer <br> 
+                        
+                        <i class="fas fa-campground fa-xs"></i> 
+                        <i class="fas fa-snowflake fa-xs"></i> 
+                        <i class="fas fa-tree fa-xs"></i> 
+                        <i class="fas fa-mountain fa-xs"></i> 
+                    
+                    </p>
+                    <p class="description">Mt. Rainier National Park is the fifth national park created in the United States and definitely one of the most stunning places in the country. This expansive park is full of adventures ideal for the most casual group looking for a family camping escape to those who want to summit the Cascade Range’s tallest peak, Mt. Rainier (14,411 feet). Mount Rainier does not disappoint and is just as legendary as featured adventures and photos included here make it out to be. One of the most popular places to summit a 14er using traditional mountaineering equipment and skills, Mount Rainier is a mountaineer’s playground. About 50% of all climbers who attempt this feat make it to the summit, making this an ideal destination for any of those who are looing for a challange - or just a seanic landscape to enjoy.</p>
+                </div>
+            </div>
+
+        <!-- Profile #3 -->
+            <div class="p3">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p3-prev"
+                data-cycle-next="#p3-next">
+                    <img src="media/images/washington/olympic-park/girl-coffee.jpg" alt="A girl drinking coffee">
+                    <img src="media/images/washington/olympic-park/leavenworth.jpg" alt="Campsite near the water">
+                    <img src="media/images/washington/olympic-park/olympic-park.jpg" alt="Olympic Park">
+                    <img src="media/images/washington/olympic-park/washington-beach.jpg" alt="Washington Beach">
+                
+                <div class="center">
+                    <a href=# id="p3-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p3-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                <div class="bio">
+                    <h2>Olympic Park</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Washington <i class="fas fa-chevron-right fa-xs"></i>Olympic Park<br>
+
+                        <i class="fas fa-campground fa-xs"></i> 
+                        <i class="fas fa-snowflake fa-xs"></i> 
+                        <i class="fas fa-tree fa-xs"></i> 
+                        <i class="fas fa-compass fa-xs"></i> 
+                    
+                    </p>
+                    <p class="description">Olympic National Park, the 5th most visited park in the United States, is amazingly still left off the list of many visitors to Washington State. Just a few hours from Seattle, Olympic National Park gives visitors a chance to explore glacier capped mountains, rain forests, and beaches, all within the park boundaries. Called three parks in one by nearly all who visit, a trip to Olympic National Park is a nature experience you'll never forget. While many know of Olympic National Park, few who haven’t visited the region understand what makes it such a sought after destination for hikers, adventurers, families and road trippers from around the world. </p>
+                </div>
+            </div>
+
+        <!-- Profile #4 -->
+            <div class="p4">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p4-prev"
+                data-cycle-next="#p4-next">
+                    <img src="media/images/washington/spokane/blanca.jpg" alt="Blanca Lake">
+                    <img src="media/images/washington/spokane/cooking-egg.jpg" alt="A camper cooking breakfast">
+                    <img src="media/images/washington/spokane/snoqualmie.jpg" alt="A mountain trail">
+                    <img src="media/images/washington/spokane/spokane-camping.jpg" alt="Camping beneath a stary night">
+                
+                <div class="center">
+                    <a href=# id="p4-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p4-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                <div class="bio">
+                    <h2>Spokane</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Washington <i class="fas fa-chevron-right fa-xs"></i> Spokane <br>
+                    
+                        <i class="fas fa-campground fa-xs"></i> 
+                        <i class="fas fa-tree fa-xs"></i> 
+                    
+                    </p>
+                    <p class="description">A mixture of urban chic and outdoor adventures, Spokane has something for everyone. Taste food by James-Beard-nominated chefs at Sante or The Wandering Table. Listen to live music at The Bartlett or the symphony at the iconic Martin Woldson Theatre at The Fox. Glide over the breathtaking Spokane Falls, situated right downtown, in the SkyRide, rated as one of the world’s best gondolas. Kids can feed the Garbage-Eating Goat or slide down the giant Radio Flyer Red Wagon in Riverfront Park.</p>
+                </div>
+            </div>
+
+        <!-- Brick -->
+            <div class="app">
+                <p class="app-title">Join the online community</p>
+                <p class="cta">Join the <span> Camping Website App </span> and make connections with travelers across America! <br> <a class="google" href='https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></p>
+
+            </div>
         </div>
         
         <!-- Interactive State Map -->
         <div class="state-map">
-            <!-- Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map " -->
+
+
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2251627.4859683043!2d-122.63114379782743!3d47.64445977412758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1542494773746" 
+                
+
+                
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map " -->
+        </div>
         </div>
 
-        <!-- Sign-Up for our App! -->
-        <div class="app">
-            <p class="app-title">JOIN THE ONLINE COMMUNITY</p>
-            <button>Privacy Policy</button>
-            <button>Terms & Conditions</button>
-            <p>Join the Camping Website App and join the conversation right away!</p>
-            <button>Get it on Google Play</button>
-            <button>Download on the App Store</button>
-        </div>
     </div>
+    <div class="book-pop-up">
+        <form
+            action="#0"
+            method="post"
+            name="book"
+            class="booking-form"
+            id="booking-form"
+        >
+            <div class="form-top">
+                <label for="first-name">First Name:</label>
+                <input
+                    type="text"
+                    id="first-name"
+                    name="firs-name"
+                    required
+                />
+
+                <label for="last-name">Last Name:</label>
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                />
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+            </div>
+
+            <div class="date">
+                <label for="start">Start date:</label>
+                <label class="end-label" for="end">End date:</label> <br />
+                <input
+                    type="date"
+                    id="start"
+                    name="trip-start"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+
+                <input
+                    class="end"
+                    type="date"
+                    id="end"
+                    name="trip-end"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+            </div>
+            <div class="camp-type">
+                <h3>Select Camp Style:</h3>
+
+                <input
+                    type="checkbox"
+                    id="tent"
+                    value="tent"
+                    name="tent"
+                    checked
+                />
+                <label for="tent">Tent</label>
+
+                <input
+                    type="checkbox"
+                    id="camper"
+                    value="camper"
+                    name="camper"
+                />
+                <label for="camper">Camper</label>
+
+                <input type="checkbox" id="rv" value="rv" name="rv" />
+                <label for="rv">RV</label>
+            </div>
+            <div class="dog">
+                <h3>Dog Friendly:</h3>
+
+                <input
+                    type="radio"
+                    id="yes"
+                    name="yes"
+                    value="dog"
+                    checked
+                />
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="no" value="dog" />
+                <label for="no">No</label>
+            </div>
+
+            <label class="campers" for="campers">Number of Campers:</label>
+            <select name="campers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br />
+            <div class="comments">
+                <label for="comments">Comments: </label> <br />
+                <textarea
+                    name="comments"
+                    id="comments"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+                <br />
+            </div>
+            <input class="submit" type="submit" value="Submit" />
+            <input class="cancel" type="submit" value="Cancel" />
+        </form>
+    </div>
+</main>
         <!-- Footer -->
-    </div>
     <footer>
             <div class="copyright">
-                &copy; Alex Engel & Shane Walders
+                &copy; Alex Engel <br> & Shane Walders
             </div>
             <nav>
             <ul>
                 <li>
-                    <a href="#0">Privacy Policy</a>
+                    <a href="#0">Privacy Policy <br> </a>
                 </li>
                 <li>
                     <a href="#0">Terms & Conditions</a>
                 </li>
             </ul>
             </nav>
-        </footer>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+></script>
+<script src="scripts/camp.js"></script>
 </body>
 </html>
