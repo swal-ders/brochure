@@ -4,105 +4,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>California Camping</title>
 </head>
 <body>
-    <!-- Nav -->
-    <nav>
-        <ul>
-            <li>
-                Camping Website
-            </li>
-            <li>
-                States
-            </li>
-            <li>
-                Parks
-            </li>
-        </ul>
-    </nav>
+	<!-- Nav -->
+	<div class="header-wrapper">
+		<header class="header">
+			<a href="index.html" class="logo">Camping</a>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn">
+				<span class="navicon"></span>
+			</label>
+			<ul class="menu">
+				<li>
+					<a class="book-now" href="#0">Request a reservation</a>
+				</li>
+				<li>
+					<a href="washington-camping.html">Washington</a>
+				</li>
+				<li>
+					<a href="oregon-camping.html">Oregon</a>
+				</li>
+				<li>
+					<a href="california-camping.html">California</a>
+				</li>
+			</ul>
+		</header>
+    </div>
+    
 
+<main>
     <div class="state-wrapper">
-
-        <!-- Filter -->
-        <div class="search-filter">
-            <button>States</button>
-            <button>Parks</button>
-            <button>Request a Reservation</button>
-            <button>Contact Us</button>
-        </div>
 
         <!-- Title -->
         <div class="state-slogan">
-            <h1>California Slogan</h1>
-            <p>Discover the Golden State</p>
+            <h1 class="state">California Discovery</h1>
+            <p>Discover the Wild West</p>
+                    <!-- Filter -->
+            <div class="search-filter">
+                <button class="bs">States</button>
+                <button class="bp">Parks</button>
+                <button class="book-now" class="brar">Request a Reservation</button>
+                <button class="bcu">Contact Us</button>
+            </div>
         </div>
+        <div class="group">
 
         <!-- Campsite Profiles -->
-        <div class="p1">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p2">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p3">
-                <img src="" alt="">
-                <h2>Campsite Option</h2>
-                <p>Request a Reservation</p>
-                <a href=""><img src="" alt="">CALENDAR ICON</a>
-                <p class="bread-crumb"> Washington > Park Name</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
-        </div>
-        <div class="p4">
-            <img src="" alt="">
-            <h2>Campsite Option</h2>
-            <p>Request a Reservation</p>
-            <a href=""><img src="" alt="">CALENDAR ICON</a>
-            <p class="bread-crumb"> Washington > Park Name</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
+        <!-- Profile #1 -->
+        <div class="profiles">
+            <div class="p1">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p1-prev"
+                data-cycle-next="#p1-next">
+                    <img src="media/images/oregon/canon beach/ecola.jpg" alt="Ecola Beach">
+                    <img src="media/images/oregon/canon beach/haystack-camp.jpg" alt="Haystack Camp">
+                    <img src="media/images/oregon/canon beach/Ecola-2.jpg" alt="Ecola Beach">
+                    <img src="media/images/oregon/canon beach/haystack.jpg" alt="Haystack Camp">
+                
+                    <div class="center">
+                        <a href=# id="p1-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                        <a href=# id="p1-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h2>Canon Beach</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i></i> Canon Beach</p>
+                    <p class="description">Cannon Beach is one of the best known stops along the Oregon Coast. Less than 15 minutes away from the town of Seaside, lined with lovely nature views and lots of tourist shops. Enjoy yourself watching the sunrise and the sunsets on the beach with Haystack rock in the ocean, playing in the tidal pools, and watching the tide come in and out.  The best way to experience Canon Beach, is to be there a week.</p>
+                </div>
+            </div>
+
+        <!-- Profile #2 -->
+            <div class="p2">
+                <div class="cycle-slideshow"
+                    data-cycle-fx="scrollHorz"
+                    data-cycle-timeout="0"
+                    data-cycle-prev="#p2-prev"
+                    data-cycle-next="#p2-next">
+                    <img src="media/images/oregon/deschutes/cook.jpg" alt="Campfire Cooking">
+                    <img src="media/images/oregon/deschutes/deschutes-camping.jpg" alt="Tents in Deschutes">
+                    <img src="media/images/oregon/deschutes/deschutes-national-forest.jpg" alt="The Deschutes National Forest">
+                    <img src="media/images/oregon/deschutes/tumalo-falls.jpg" alt="Tumalo Waterfalls">
+                
+                <div class="center">
+                    <a href=# id="p2-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p2-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+
+                </div>
+                <div class="bio">
+                    <h2>Deschutes</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Deschutes</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
+                </div>
+            </div>
+
+        <!-- Profile #3 -->
+            <div class="p3">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p3-prev"
+                data-cycle-next="#p3-next">
+                    <img src="media/images/oregon/Honeymoon-park/dune-buggy.jpg" alt="A dune buggy racing through the sand dunes">
+                    <img src="media/images/oregon/Honeymoon-park/honey-camping.jpg" alt="A camper in the forest">
+                    <img src="media/images/oregon/Honeymoon-park/honey-lake.jpg" alt="Honey Lake">
+                    <img src="media/images/oregon/Honeymoon-park/sandboarding.jpg" alt="A sandboarder juming the sand dunes">
+                
+                <div class="center">
+                    <a href=# id="p3-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p3-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                <div class="bio">
+                    <h2>Honeymoon Park</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Honeymoon Park</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
+                </div>
+            </div>
+
+        <!-- Profile #4 -->
+            <div class="p4">
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-prev="#p4-prev"
+                data-cycle-next="#p4-next">
+                    <img src="media/images/oregon/smith-rock/Smith-Rock-climber.jpg" alt="A rock climber">
+                    <img src="media/images/oregon/smith-rock/smith-rock.jpg" alt="Smith Rock mountain">
+                    <img src="media/images/oregon/smith-rock/smith-rock1.jpg" alt="Smith Rock Mountain">
+                    <img src="media/images/oregon/smith-rock/tentSmithRock.jpg" alt="Camping at Smith Rock">
+                
+                <div class="center">
+                    <a href=# id="p4-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
+                    <a href=# id="p4-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                <div class="bio">
+                    <h2>Smith Rock</h2>
+                    <p class="reservation"><a href="#0">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
+                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Smith Rock</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt nam, laudantium tempore eveniet rerum, sunt maxime doloremque quod possimus consequuntur, velit voluptatum nisi veritatis!</p>
+                </div>
+            </div>
+
+        <!-- Brick -->
+            <div class="app">
+                <p class="app-title">Join the online community</p>
+                <p class="cta">Join the <span> Camping Website App </span> and make connections with travelers across America! <br> <a class="google" href='https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></p>
+
+            </div>
         </div>
         
         <!-- Interactive State Map -->
         <div class="state-map">
-            <!-- Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map " -->
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2898049.4093358153!2d-121.24971100000002!3d44.81899!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1541716614774" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map " -->
+        </div>
         </div>
 
-        <!-- Sign-Up for our App! -->
-        <div class="app">
-            <p class="app-title">JOIN THE ONLINE COMMUNITY</p>
-            <button>Privacy Policy</button>
-            <button>Terms & Conditions</button>
-            <p>Join the Camping Website App and join the conversation right away!</p>
-            <button>Get it on Google Play</button>
-            <button>Download on the App Store</button>
-        </div>
     </div>
+    <div class="book-pop-up">
+        <form
+            action="#0"
+            method="post"
+            name="book"
+            class="booking-form"
+            id="booking-form"
+        >
+            <div class="form-top">
+                <label for="first-name">First Name:</label>
+                <input
+                    type="text"
+                    id="first-name"
+                    name="firs-name"
+                    required
+                />
+
+                <label for="last-name">Last Name:</label>
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                />
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+            </div>
+
+            <div class="date">
+                <label for="start">Start date:</label>
+                <label class="end-label" for="end">End date:</label> <br />
+                <input
+                    type="date"
+                    id="start"
+                    name="trip-start"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+
+                <input
+                    class="end"
+                    type="date"
+                    id="end"
+                    name="trip-end"
+                    value=""
+                    min="2018-01-01"
+                    max="2019-12-31"
+                />
+            </div>
+            <div class="camp-type">
+                <h3>Select Camp Style:</h3>
+
+                <input
+                    type="checkbox"
+                    id="tent"
+                    value="tent"
+                    name="tent"
+                    checked
+                />
+                <label for="tent">Tent</label>
+
+                <input
+                    type="checkbox"
+                    id="camper"
+                    value="camper"
+                    name="camper"
+                />
+                <label for="camper">Camper</label>
+
+                <input type="checkbox" id="rv" value="rv" name="rv" />
+                <label for="rv">RV</label>
+            </div>
+            <div class="dog">
+                <h3>Dog Friendly:</h3>
+
+                <input
+                    type="radio"
+                    id="yes"
+                    name="yes"
+                    value="dog"
+                    checked
+                />
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="no" value="dog" />
+                <label for="no">No</label>
+            </div>
+
+            <label class="campers" for="campers">Number of Campers:</label>
+            <select name="campers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br />
+            <div class="comments">
+                <label for="comments">Comments: </label> <br />
+                <textarea
+                    name="comments"
+                    id="comments"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+                <br />
+            </div>
+            <input class="submit" type="submit" value="Submit" />
+            <input class="cancel" type="submit" value="Cancel" />
+        </form>
+    </div>
+</main>
         <!-- Footer -->
-    </div>
     <footer>
             <div class="copyright">
-                &copy; Alex Engel & Shane Walders
+                &copy; Alex Engel <br> & Shane Walders
             </div>
             <nav>
             <ul>
                 <li>
-                    <a href="#0">Privacy Policy</a>
+                    <a href="#0">Privacy Policy <br> </a>
                 </li>
                 <li>
                     <a href="#0">Terms & Conditions</a>
                 </li>
             </ul>
             </nav>
-        </footer>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+></script>
+<script src="scripts/camp.js"></script>
 </body>
 </html>
