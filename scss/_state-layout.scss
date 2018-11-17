@@ -316,7 +316,7 @@ main {
                     }
 
                     .description {
-                        margin-bottom: 10%;
+                        margin-bottom: 5%;
                     }
                 }
             }
@@ -329,84 +329,38 @@ main {
     }
 }
 
-@media (max-width: 600px) {
+// @media (max-width: 600px) {
 
-    .state-wrapper{
-        margin: 0;
+//     .state-wrapper{
+//         margin: 0;
 
-        .group{
+//         .group{
 
-            .profiles{
+//             .profiles{
 
-                .cycle-slideshow{
-                    width: 100%;
-                }
+//                 .cycle-slideshow{
+//                     width: 100%;
+//                 }
     
-                .bio{
-                    padding: 0 10% 0 10%;
+//                 .bio{
+//                     padding: 0 10% 0 10%;
 
-                    .reservation {
+//                     .reservation {
 
-                        right: 10px;
-                    }
-                }
+//                         right: 10px;
+//                     }
+//                 }
 
-                .app {
-                    padding: 10% 10% 10% 10%;
-                }
-            }
-        }   
-    }
-}
+//                 .app {
+//                     padding: 10% 10% 10% 10%;
+//                 }
+//             }
+//         }   
+//     }
+// }
 
-@media (max-width: 465px) {
 
-    .state-wrapper{
-        
-        .state-slogan {
-    
-            .state {
-                font-family: $heading-font;
-                font-size: 250%;
-            }
 
-            .group{
-                
-                .profiles{
-
-                    .bio {
-
-                        .bread-crumb {
-                            top: 75px;
-                            right: 50px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-
-    .state-wrapper{
-        
-        .state-slogan {
-    
-            .state {
-                font-family: $heading-font;
-                font-size: 175%;
-                padding-left: 5%;
-            }
-
-            p {
-
-                margin: 0 0 2% 100px;
-
-            }
-        }
-    }
-}
 
 @media (max-width: 600px) {
 .state-wrapper{
@@ -430,7 +384,7 @@ main {
         border: none;
         border-top: 7px solid whitesmoke;
         .state-slogan {
-            height: 160px;
+            height: 105px;
             p{
                 margin: 0;
             }
@@ -440,4 +394,54 @@ main {
         }
     
     }
+    }
+    @media (max-width: 465px) {
+
+        .state-wrapper{
+            
+            .state-slogan {
+                height: 140px;
+    
+                .state {
+                    font-family: $heading-font;
+                    font-size: 250%;
+                }
+    
+                .group{
+                    
+                    .profiles{
+    
+                        .bio {
+    
+                            .bread-crumb {
+                                top: 75px;
+                                right: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 400px) {
+
+        .state-wrapper{
+            
+            .state-slogan {
+                height: 90px;
+    
+                .state {
+                    font-family: $heading-font;
+                    font-size: 175%;
+                    // padding-left: 5%;
+                }
+    
+                p {
+    
+                    margin: 0 0 2% 0px;
+    
+                }
+            }
+        }
     }
