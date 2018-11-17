@@ -1,13 +1,15 @@
 footer {
+	z-index: 101;
 	display: flex;
-	position: fixed;
-	width: 100%;
 	border-top: 3px solid whitesmoke;
 	background-color: #dfe3df;
-	left: 0;
-	bottom: 0;
 	padding: 10px;
 	font-family: $body-font;
+
+	position:absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
 
 	.copyright {
 		flex-grow: 4;

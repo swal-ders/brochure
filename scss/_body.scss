@@ -1,4 +1,7 @@
 body {
 	background-color: $body-bg-color;
 	color: $font-color;
+
+	min-height: 1400px;
+	position: relative;
 }

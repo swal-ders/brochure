@@ -48,9 +48,11 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, 1fr);
 
-            .p1, .p2, .p3, .p4 {
+            .bio {
+                position: relative;
 
                 h2 {
+                    padding: 7% 0 0 0;
                     font-size: 150%;
                     font-family: $heading-font;
                 }
@@ -61,40 +63,54 @@
                 }
 
                 .reservation {
+                    font-size: 90%;
                     font-weight: bold;
+                    font-style: italic;
                     color: black;
+                    position: absolute;
+                    top: 2px;
+                    right: 0px;
                 }
                 
                 .bread-crumb{
+                    color: rgba(0, 0, 0, 0.616);
+                    font-size: 75%;
                     font-style: italic;
+                    position: absolute;
+                    top: 60px;
+                    right: 30px;
                 }
 
-                .cycle-slideshow{
-        
-                    position: relative;
-                
-                    .center a {
-                        color: rgba(245, 245, 245, 0.452);
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 101;
+                .description {
+                    padding: 25px 0 0 0;
+                }
+            }
 
-                        &:first-child {
-                            left: 8px;
-                        }
-                        &:last-child {
-                            right: 8px;
-                        }
+            .cycle-slideshow{
+    
+                position: relative;
+            
+                .center a {
+                    color: rgba(245, 245, 245, 0.452);
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 101;
+
+                    &:first-child {
+                        left: 8px;
                     }
-                }   
-                
-                .app {   
-                    margin-top: 50px;
-                    overflow: scroll;
-                    display: block;
-                    height: 33.33vh;
+                    &:last-child {
+                        right: 8px;
+                    }
                 }
+            }  
+            
+            .app {   
+                margin-top: 50px;
+                overflow: scroll;
+                display: inline;
+                height: 33.33vh;
             }
         }
 
@@ -106,7 +122,7 @@
             position: -webkit-sticky; /* Safari */
             position: sticky;
             top: 0;
-            height: 90vh;
+            height: 98vh;
             padding: 0 0 0 15%;
             padding: 0 0 0 15%;
         } 
