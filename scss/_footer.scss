@@ -29,7 +29,29 @@ footer {
 
 	ul li a {
 		text-decoration: none;
-		padding-right: 10px;
 		color: black;
+	}
+}
+
+@media (max-width: 536px){
+
+	footer{
+
+		.copyright {
+			font-size: 75%;
+		}
+
+		nav {
+
+			ul {
+
+				li {
+
+					a{
+						font-size: 75%;
+					}
+				}
+			}
+		}
 	}
 }
