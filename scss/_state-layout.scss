@@ -237,57 +237,53 @@
     }
 }
 
-@media (max-width: 442px) {
+@media (max-width: 950px){
+
+    .state-wrapper{
+
+        margin: 0 5% 0 5%;
+
+        .group {
+            
+            .profiles {
+
+                .bio {
+                    
+                    h2 {
+                        padding: 10% 0 0 0;
+                    }
+
+                    .bread-crumb {
+                        top: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 635px) {
 
     .state-wrapper{
 
         .group{
 
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-areas:
-            'a'
-            'b'
-            'c'
-            'd'
-            'e';
+            display: flex;
+            flex-direction: column;
             
             .profiles{
 
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(5, 1fr);
-                grid-template-areas:
-                'a'
-                'b'
-                'c'
-                'd'
-                'e';
+                display: block;
 
-                div:nth-child(1){
-                    grid-area: a;
-                    width: 100%;
-                }
-    
-                div:nth-child(2){
-                    grid-area: b;
-                    width: 100%;
-                }
-    
-                div:nth-child(3){
-                    grid-area: c;
-                    width: 100%;
-                }
-    
-                div:nth-child(4){
-                    grid-area: d;
-                    width: 100%;
-                }
-    
-                div:nth-child(5){
-                    grid-area: e;
-                    width: 100%;
+                .bio {
+
+                    h2{
+                        font-size: 200%;
+                    }
+
+                    .description {
+                        margin-bottom: 10%;
+                    }
                 }
             }
 
@@ -295,6 +291,85 @@
                 
                 display: none;
             } 
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .state-wrapper{
+        margin: 0;
+
+        .group{
+
+            .profiles{
+
+                .cycle-slideshow{
+                    width: 100%;
+                }
+    
+                .bio{
+                    padding: 0 10% 0 10%;
+
+                    .reservation {
+
+                        right: 10px;
+                    }
+                }
+
+                .app {
+                    padding: 10% 10% 10% 10%;
+                }
+            }
+        }   
+    }
+}
+
+@media (max-width: 465px) {
+
+    .state-wrapper{
+        
+        .state-slogan {
+    
+            .state {
+                font-family: $heading-font;
+                font-size: 250%;
+            }
+
+            .group{
+                
+                .profiles{
+
+                    .bio {
+
+                        .bread-crumb {
+                            top: 75px;
+                            right: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .state-wrapper{
+        
+        .state-slogan {
+    
+            .state {
+                font-family: $heading-font;
+                font-size: 175%;
+                padding-left: 5%;
+            }
+
+            p {
+
+                margin: 0 0 2% 100px;
+
+            }
         }
     }
 }
