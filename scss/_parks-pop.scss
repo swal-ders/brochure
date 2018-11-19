@@ -4,7 +4,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
-	height: 100vh;
+	height: 102vh;
 	background-color: rgba(223, 227, 223, 0.42);
 	z-index: 100;
 	visibility: hidden;
@@ -16,6 +16,7 @@
 	}
     
     .park-list {
+        z-index: 1003;
         max-width: 320px;
 		height: auto;
 		background-color: white;
