@@ -33,3 +33,13 @@ $('.term-con').click(function(){
 	window.location = 'terms-of-service.html';
 });
 
+
+// 
+
+$('.bcu').click(function() {
+	$('.contact-pop-up').toggleClass('contact-pop');
+});
+
+$('.contact-cancel').click(function() {
+	$('.contact-pop-up').toggleClass('contact-pop');
+});
