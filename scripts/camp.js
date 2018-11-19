@@ -24,3 +24,11 @@ $('.bp').click(function() {
 $('.parks-cancel').click(function() {
 	$('.parks-pop-up').toggleClass('park-pop');
 });
+
+$('.priv-pol').click(function(){
+	window.location = 'privacy.html';
+});
+
+$('.term-con').click(function(){
+	window.location = 'terms-of-service.html';
+});
