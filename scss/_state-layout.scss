@@ -373,6 +373,9 @@ main {
     padding: 10px 10px 150px 10px;
     .state-slogan {
         height: 120px;
+        h1 {
+            font-size: 250%;
+        }
         p{
             margin: 0;
         }
@@ -384,13 +387,20 @@ main {
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .state-wrapper{
         padding: 10px 10px 150px 10px;
         border: none;
         border-top: 7px solid whitesmoke;
         .state-slogan {
             height: 105px;
+            .state{
+                h1{
+                    font-size: 250%;
+    
+                }
+            }
+
             p{
                 margin: 0;
             }
@@ -400,54 +410,54 @@ main {
         }
     
     }
-    }
-    @media (max-width: 465px) {
+}
+@media (max-width: 465px) {
 
-        .state-wrapper{
-            
-            .state-slogan {
-                // height: 140px;
-    
-                .state {
-                    font-family: $heading-font;
-                    font-size: 250%;
-                }
-    
-                .group{
-                    
-                    .profiles{
-    
-                        .bio {
-    
-                            .bread-crumb {
-                                top: 75px;
-                                right: 50px;
-                            }
+    .state-wrapper{
+        
+        .state-slogan {
+            // height: 140px;
+
+            // .state {
+            //     font-family: $heading-font;
+            //     font-size: 250%;
+            // }
+
+            .group{
+                
+                .profiles{
+
+                    .bio {
+
+                        .bread-crumb {
+                            top: 75px;
+                            right: 50px;
                         }
                     }
                 }
             }
         }
     }
-    
-    @media (max-width: 400px) {
+}
 
-        .state-wrapper{
-            
-            .state-slogan {
-                height: 90px;
-    
-                .state {
-                    font-family: $heading-font;
-                    font-size: 175%;
-                    // padding-left: 5%;
-                }
-    
-                p {
-    
-                    margin: 0 0 2% 0px;
-    
-                }
+@media (max-width: 400px) {
+
+    .state-wrapper{
+        
+        .state-slogan {
+            height: 90px;
+
+            .state {
+                font-family: $heading-font;
+                font-size: 175%;
+                // padding-left: 5%;
+            }
+
+            p {
+
+                margin: 0 0 2% 0px;
+
             }
         }
     }
+}
