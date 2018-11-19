@@ -9,6 +9,7 @@
 	background-color: rgba(223, 227, 223, 0.42);
 	visibility: hidden;
 	position: fixed;
+	z-index: 100300000000;
 
 	&.contact-pop {
 		transition: all 0.4s ease-in;
@@ -16,7 +17,7 @@
 	}
 
 	.contact-info {
-		z-index: 1003;
+		z-index: 100300000000;
 		max-width: 320px;
 		height: auto;
 		width: auto;
