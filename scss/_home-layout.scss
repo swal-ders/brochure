@@ -12,8 +12,6 @@
 		grid-gap: 40px;
 		grid-template-columns: repeat(3, auto);
 		grid-template-rows: repeat(1, auto);
-		// grid-template-areas: 'a a b b b';
-		// border-top: 7px solid whitesmoke;
 
 		.call-to-action {
 			grid-column-start: 1;
@@ -80,12 +78,7 @@
 			}
 
 			.legal {
-				// display: grid;
-				// grid-gap: 20px;
 				padding-top: 5px;
-				// grid-template-columns: repeat(2, 1fr);
-				// grid-template-rows: repeat(1, 1fr);
-				// grid-template-areas: 'a b';
 				font-family: $body-font;
 				text-transform: uppercase;
 				font-weight: bold;
@@ -93,7 +86,6 @@
 				padding-bottom: 20px;
 
 				.priv-pol {
-					// grid-area: a;
 					width: 49%;
 					font-family: $body-font;
 					text-transform: uppercase;
@@ -105,7 +97,6 @@
 				}
 
 				.term-con {
-					// grid-area: b;
 					width: 49%;
 					font-family: $body-font;
 					text-transform: uppercase;
@@ -142,7 +133,6 @@
 
 				.logos {
 					font-size: 25px;
-					// padding-bottom: 30px;
 				}
 			}
 		}
@@ -154,8 +144,7 @@
 		.home {
 			.wrapper-home {
 				.call-to-action {
-
-					.slogan{
+					.slogan {
 						font-size: 300%;
 					}
 
@@ -171,7 +160,7 @@
 		}
 
 		div {
-			.map-slogan{
+			.map-slogan {
 				font-size: 300%;
 			}
 		}
@@ -183,8 +172,7 @@
 		.home {
 			.wrapper-home {
 				.call-to-action {
-
-					.slogan{
+					.slogan {
 						font-size: 250%;
 					}
 
@@ -200,7 +188,7 @@
 		}
 
 		div {
-			.map-slogan{
+			.map-slogan {
 				font-size: 25 0%;
 			}
 		}

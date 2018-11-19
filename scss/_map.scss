@@ -8,12 +8,12 @@
 	}
 }
 
-.state {
+.state-map {
 	fill: #226c8196;
 	transition: all 0.4s ease;
 }
 
-.state:hover {
+.state-map:hover {
 	fill: #226d81;
 	transform: scale(1.005);
 }
