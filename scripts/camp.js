@@ -32,3 +32,4 @@ $('.priv-pol').click(function(){
 $('.term-con').click(function(){
 	window.location = 'terms-of-service.html';
 });
+
