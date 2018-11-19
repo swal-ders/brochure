@@ -175,7 +175,7 @@
 				}
 
 				.cta {
-					padding: 15px 0 0 10px;
+					padding: 15px 0 0 0px;
 					font-family: $body-font;
 					font-size: 125%;
 					text-align: center;
@@ -191,7 +191,7 @@
 					text-align: center;
 					// margin: auto;
 					img {
-						max-width: 300px;
+						max-width: 280px;
 						height: auto;
 						// margin: 10px 28%;
 						// margin: auto;
@@ -224,11 +224,11 @@
 		.group {
 			display: grid;
 			padding: 0;
-
+			column-gap: 5%;
 			.profiles {
 				display: grid;
 				row-gap: 1.5%;
-
+				column-gap: 5%;
 				grid-template-columns: repeat(1, 1fr);
 				grid-template-rows: repeat(5, auto);
 				grid-template-areas:
@@ -363,9 +363,6 @@
 	.state-wrapper {
 		.group {
 			.profiles {
-				img {
-					display: none;
-				}
 			}
 		}
 		.state-slogan {
