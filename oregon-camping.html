@@ -1,423 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="apple-touch-icon" sizes="57x57" href="favicon/">
-        <link rel="apple-touch-icon" sizes="60x60" href="favicon/">
-        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Oregon Camping</title>
-</head>
-<body>
-	<!-- Nav -->
-	<div class="header-wrapper">
-		<header class="header">
-			<a href="index.html" class="logo">Compass</a>
-			<input class="menu-btn" type="checkbox" id="menu-btn" />
-			<label class="menu-icon" for="menu-btn">
-				<span class="navicon"></span>
-			</label>
-			<ul class="menu">
-				<li>
-					<a class="book-now" href="#0">Request a reservation</a>
-				</li>
-				<li>
-					<a href="washington-camping.html">Washington</a>
-				</li>
-				<li>
-					<a href="oregon-camping.html">Oregon</a>
-				</li>
-				<li>
-					<a href="california-camping.html">California</a>
-				</li>
-			</ul>
-		</header>
-    </div>
-    
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/" />
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/" />
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+			integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+			crossorigin="anonymous"
+		/>
+		<title>Oregon Camping</title>
+	</head>
+	<body>
+		<!-- Nav -->
+		<div class="header-wrapper">
+			<header class="header">
+				<a href="index.html" class="logo">Compass</a>
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn">
+					<span class="navicon"></span>
+				</label>
+				<ul class="menu">
+					<li>
+						<a class="book-now" href="#0">Request a reservation</a>
+					</li>
+					<li><a href="washington-camping.html">Washington</a></li>
+					<li><a href="oregon-camping.html">Oregon</a></li>
+					<li><a href="california-camping.html">California</a></li>
+				</ul>
+			</header>
+		</div>
 
-<main>
-    <div class="state-wrapper">
+		<main>
+			<div class="state-wrapper">
+				<!-- Title -->
+				<div class="state-slogan">
+					<h1 class="state">Oregon Exploration</h1>
+					<p>Discover the Wild West</p>
+					<!-- Filter -->
+					<div class="search-filter">
+						<button class="bs">States</button>
+						<button class="bp">Parks</button>
+						<button class="book-now" class="brar">
+							Request a Reservation
+						</button>
+						<button class="bcu">Contact Us</button>
+					</div>
+				</div>
+				<div class="group">
+					<!-- Campsite Profiles -->
+					<!-- Profile #1 -->
+					<div class="profiles">
+						<div class="p1" id="canon-beach">
+							<div
+								class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-cycle-timeout="0"
+								data-cycle-prev="#p1-prev"
+								data-cycle-next="#p1-next"
+							>
+								<img
+									src="media/images/oregon/canon beach/ecola.jpg"
+									alt="Ecola Beach"
+								/>
+								<img
+									src="media/images/oregon/canon beach/haystack-camp.jpg"
+									alt="Haystack Camp"
+								/>
+								<img
+									src="media/images/oregon/canon beach/Ecola-2.jpg"
+									alt="Ecola Beach"
+								/>
+								<img
+									src="media/images/oregon/canon beach/haystack.jpg"
+									alt="Haystack Camp"
+								/>
 
-        <!-- Title -->
-        <div class="state-slogan">
-            <h1 class="state">Oregon Exploration</h1>
-            <p>Discover the Wild West</p>
-                    <!-- Filter -->
-            <div class="search-filter">
-                <button class="bs">States</button>
-                <button class="bp">Parks</button>
-                <button class="book-now" class="brar">Request a Reservation</button>
-                <button class="bcu">Contact Us</button>
-            </div>
-        </div>
-        <div class="group">
+								<div class="center">
+									<a href="#" id="p1-prev" class="prev"
+										><i
+											class="fas fa-chevron-circle-left"
+										></i
+									></a>
+									<a href="#" id="p1-next" class="next"
+										><i
+											class="fas fa-chevron-circle-right"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="bio">
+								<h2>Canon Beach</h2>
+								<p class="reservation">
+									<a href="#0" class="book-now"
+										>Request a Reservation
+										<i class="fas fa-calendar-alt"></i
+									></a>
+								</p>
+								<p class="bread-crumb">
+									Oregon
+									<i class="fas fa-chevron-right fa-xs"></i>
+									Canon Beach <br />
 
-        <!-- Campsite Profiles -->
-        <!-- Profile #1 -->
-        <div class="profiles">
-            <div class="p1" id="canon-beach">
-                <div class="cycle-slideshow"
-                data-cycle-fx="scrollHorz"
-                data-cycle-timeout="0"
-                data-cycle-prev="#p1-prev"
-                data-cycle-next="#p1-next">
-                    <img src="media/images/oregon/canon beach/ecola.jpg" alt="Ecola Beach">
-                    <img src="media/images/oregon/canon beach/haystack-camp.jpg" alt="Haystack Camp">
-                    <img src="media/images/oregon/canon beach/Ecola-2.jpg" alt="Ecola Beach">
-                    <img src="media/images/oregon/canon beach/haystack.jpg" alt="Haystack Camp">
-                
-                    <div class="center">
-                        <a href=# id="p1-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
-                        <a href=# id="p1-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
-                    </div>
-                </div>
-                <div class="bio">
-                    <h2>Canon Beach</h2>
-                    <p class="reservation"><a href="#0" class="book-now">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
-                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Canon Beach <br>
+									<i class="fas fa-campground fa-xs"></i>
+									<i class="fas fa-umbrella-beach fa-xs"></i>
+									<i class="fas fa-sun fa-xs"></i>
+								</p>
+								<p class="description">
+									Cannon Beach is one of the best known stops
+									along the Oregon Coast. Less than 15 minutes
+									away from the town of Seaside, lined with
+									lovely nature views and lots of tourist
+									shops. Enjoy yourself watching the sunrise
+									and the sunsets on the beach with Haystack
+									rock in the ocean, playing in the tidal
+									pools, and watching the tide come in and
+									out. The best way to experience Canon Beach,
+									is to be there a week.
+								</p>
+							</div>
+						</div>
 
+						<!-- Profile #2 -->
+						<div class="p2" id="deschutes">
+							<div
+								class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-cycle-timeout="0"
+								data-cycle-prev="#p2-prev"
+								data-cycle-next="#p2-next"
+							>
+								<img
+									src="media/images/oregon/deschutes/cook.jpg"
+									alt="Campfire Cooking"
+								/>
+								<img
+									src="media/images/oregon/deschutes/deschutes-camping.jpg"
+									alt="Tents in Deschutes"
+								/>
+								<img
+									src="media/images/oregon/deschutes/deschutes-national-forest.jpg"
+									alt="The Deschutes National Forest"
+								/>
+								<img
+									src="media/images/oregon/deschutes/tumalo-falls.jpg"
+									alt="Tumalo Waterfalls"
+								/>
 
-                    <i class="fas fa-campground fa-xs"></i>
-					<i class="fas fa-umbrella-beach fa-xs"></i>
-					<i class="fas fa-sun fa-xs"></i>
-                    
-                    
-                    </p>
-                    <p class="description">Cannon Beach is one of the best known stops along the Oregon Coast. Less than 15 minutes away from the town of Seaside, lined with lovely nature views and lots of tourist shops. Enjoy yourself watching the sunrise and the sunsets on the beach with Haystack rock in the ocean, playing in the tidal pools, and watching the tide come in and out.  The best way to experience Canon Beach, is to be there a week.</p>
-                </div>
-            </div>
+								<div class="center">
+									<a href="#" id="p2-prev" class="prev"
+										><i
+											class="fas fa-chevron-circle-left"
+										></i
+									></a>
+									<a href="#" id="p2-next" class="next"
+										><i
+											class="fas fa-chevron-circle-right"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="bio">
+								<h2>Deschutes</h2>
+								<p class="reservation">
+									<a href="#0" class="book-now"
+										>Request a Reservation
+										<i class="fas fa-calendar-alt"></i
+									></a>
+								</p>
+								<p class="bread-crumb">
+									Oregon
+									<i class="fas fa-chevron-right fa-xs"></i>
+									Deschutes <br />
 
-        <!-- Profile #2 -->
-            <div class="p2" id="deschutes">
-                <div class="cycle-slideshow"
-                    data-cycle-fx="scrollHorz"
-                    data-cycle-timeout="0"
-                    data-cycle-prev="#p2-prev"
-                    data-cycle-next="#p2-next">
-                    <img src="media/images/oregon/deschutes/cook.jpg" alt="Campfire Cooking">
-                    <img src="media/images/oregon/deschutes/deschutes-camping.jpg" alt="Tents in Deschutes">
-                    <img src="media/images/oregon/deschutes/deschutes-national-forest.jpg" alt="The Deschutes National Forest">
-                    <img src="media/images/oregon/deschutes/tumalo-falls.jpg" alt="Tumalo Waterfalls">
-                
-                <div class="center">
-                    <a href=# id="p2-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
-                    <a href=# id="p2-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
-                </div>
+									<i class="fas fa-campground fa-xs"></i>
+									<i class="fas fa-mountain fa-xs"></i>
+									<i class="fas fa-tree fa-xs"></i>
+									<i class="fas fa-snowflake fa-xs"></i>
+								</p>
+								<p class="description">
+									The Deschutes River flows through Bend and
+									the Riverhouse on the Deschutes property.
+									Whether you’re drawn to Bend by the
+									breweries, the hiking trails, or the
+									mountain biking, there’s one activity that’s
+									almost certainly on your to-do list: Float
+									down the river. Visitors come to fly fish,
+									kayak, canoe and white water raft. One of
+									the local favorites is to float down the
+									river on hot days from the Old Mill District
+									to Drake Park Downtown on your favorite
+									inflatable or inner tube.
+								</p>
+							</div>
+						</div>
 
-                </div>
-                <div class="bio">
-                    <h2>Deschutes</h2>
-                    <p class="reservation"><a href="#0" class="book-now">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
-                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Deschutes <br>
-                    
-                        <i class="fas fa-campground fa-xs"></i>
-                        <i class="fas fa-mountain fa-xs"></i>
-                        <i class="fas fa-tree fa-xs"></i>
-                        <i class="fas fa-snowflake fa-xs"></i>
-                    
-                    </p>
-                    <p class="description">The Deschutes River flows through Bend and the Riverhouse on the Deschutes property. 
-                    Whether you’re drawn to Bend by the breweries, the hiking trails, or the mountain biking, there’s one activity that’s almost certainly on your to-do list: Float down the river. Visitors come to fly fish, kayak, canoe and white water raft. One of the local favorites is to float down the river on hot days from the Old Mill District to Drake Park Downtown on your favorite inflatable or inner tube. </p>
-                </div>
-            </div>
+						<!-- Profile #3 -->
+						<div class="p3" id="honeymoon-park">
+							<div
+								class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-cycle-timeout="0"
+								data-cycle-prev="#p3-prev"
+								data-cycle-next="#p3-next"
+							>
+								<img
+									src="media/images/oregon/Honeymoon-park/dune-buggy.jpg"
+									alt="A dune buggy racing through the sand dunes"
+								/>
+								<img
+									src="media/images/oregon/Honeymoon-park/honey-camping.jpg"
+									alt="A camper in the forest"
+								/>
+								<img
+									src="media/images/oregon/Honeymoon-park/honey-lake.jpg"
+									alt="Honey Lake"
+								/>
+								<img
+									src="media/images/oregon/Honeymoon-park/sandboarding.jpg"
+									alt="A sandboarder juming the sand dunes"
+								/>
 
-        <!-- Profile #3 -->
-            <div class="p3" id="honeymoon-park">
-                <div class="cycle-slideshow"
-                data-cycle-fx="scrollHorz"
-                data-cycle-timeout="0"
-                data-cycle-prev="#p3-prev"
-                data-cycle-next="#p3-next">
-                    <img src="media/images/oregon/Honeymoon-park/dune-buggy.jpg" alt="A dune buggy racing through the sand dunes">
-                    <img src="media/images/oregon/Honeymoon-park/honey-camping.jpg" alt="A camper in the forest">
-                    <img src="media/images/oregon/Honeymoon-park/honey-lake.jpg" alt="Honey Lake">
-                    <img src="media/images/oregon/Honeymoon-park/sandboarding.jpg" alt="A sandboarder juming the sand dunes">
-                
-                <div class="center">
-                    <a href=# id="p3-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
-                    <a href=# id="p3-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
-                </div>
-                </div>
-                <div class="bio">
-                    <h2>Honeymoon Park</h2>
-                    <p class="reservation"><a href="#0" class="book-now">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
-                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Honeymoon Park <br> 
-                    
-                        <i class="fas fa-campground fa-xs"></i>
-                        <i class="fas fa-umbrella-beach fa-xs"></i>
-                        <i class="fas fa-sun fa-xs"></i>
-                    
-                    </p>
-                    <p class="description">This versatile, beautiful coastal park is situated halfway up the Oregon coast, three miles south of the city of Florence. Honeyman is the second largest Oregon state park campground, offering more than 350 campsites, hiking trails, and miles of sand dunes between the park and the ocean. It's also home to two natural freshwater lakes: Cleawox, which is great for swimming, and Woahink, which has a public boat ramp.  Rent a canoe and explore the lake.</p>
-                </div>
-            </div>
+								<div class="center">
+									<a href="#" id="p3-prev" class="prev"
+										><i
+											class="fas fa-chevron-circle-left"
+										></i
+									></a>
+									<a href="#" id="p3-next" class="next"
+										><i
+											class="fas fa-chevron-circle-right"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="bio">
+								<h2>Honeymoon Park</h2>
+								<p class="reservation">
+									<a href="#0" class="book-now"
+										>Request a Reservation
+										<i class="fas fa-calendar-alt"></i
+									></a>
+								</p>
+								<p class="bread-crumb">
+									Oregon
+									<i class="fas fa-chevron-right fa-xs"></i>
+									Honeymoon Park <br />
 
-        <!-- Profile #4 -->
-            <div class="p4" id="smith-rock">
-                <div class="cycle-slideshow"
-                data-cycle-fx="scrollHorz"
-                data-cycle-timeout="0"
-                data-cycle-prev="#p4-prev"
-                data-cycle-next="#p4-next">
-                    <img src="media/images/oregon/smith-rock/Smith-Rock-climber.jpg" alt="A rock climber">
-                    <img src="media/images/oregon/smith-rock/smith-rock.jpg" alt="Smith Rock mountain">
-                    <img src="media/images/oregon/smith-rock/smith-rock1.jpg" alt="Smith Rock Mountain">
-                    <img src="media/images/oregon/smith-rock/tentSmithRock.jpg" alt="Camping at Smith Rock">
-                
-                <div class="center">
-                    <a href=# id="p4-prev" class="prev"><i class="fas fa-chevron-circle-left"></i></a> 
-                    <a href=# id="p4-next" class="next"><i class="fas fa-chevron-circle-right"></i></a>
-                </div>
-                </div>
-                <div class="bio">
-                    <h2>Smith Rock</h2>
-                    <p class="reservation"><a href="#0" class="book-now">Request a Reservation <i class="fas fa-calendar-alt"></i></a></p>
-                    <p class="bread-crumb"> Oregon <i class="fas fa-chevron-right fa-xs"></i> Smith Rock <br>
-                    
-                        <i class="fas fa-campground fa-xs"></i>
-                        <i class="fas fa-mountain fa-xs"></i>
-                        <i class="fas fa-sun fa-xs"></i>
-                    
-                    </p>
-                    <p class="description">Situated in Central Oregon, home to 300 days of sun a year, Smith Rock is located in an outdoor adventurer’s playground. Golfing, caving, paddle boarding on the Deschutes and skiing Mt. Bachelor are all close by. Mountain bikers can hit Phil’s Trail, while cyclists can take their pick of five scenic bikeways with names like Madras Mountain Views and Sisters to Smith Rock. Hikers will want to explore the obsidian lava flows at Newberry Crater National Volcanic Monument, where astronauts trained to walk on the moon.</p>
-                </div>
-            </div>
+									<i class="fas fa-campground fa-xs"></i>
+									<i class="fas fa-umbrella-beach fa-xs"></i>
+									<i class="fas fa-sun fa-xs"></i>
+								</p>
+								<p class="description">
+									This versatile, beautiful coastal park is
+									situated halfway up the Oregon coast, three
+									miles south of the city of Florence.
+									Honeyman is the second largest Oregon state
+									park campground, offering more than 350
+									campsites, hiking trails, and miles of sand
+									dunes between the park and the ocean. It's
+									also home to two natural freshwater lakes:
+									Cleawox, which is great for swimming, and
+									Woahink, which has a public boat ramp. Rent
+									a canoe and explore the lake.
+								</p>
+							</div>
+						</div>
 
-        <!-- Brick -->
-            <div class="app">
-                <p class="app-title">Join the online community</p>
-                <p class="cta">Join the <span> Camping Website App </span> and make connections with travelers across America! <br> <a class="google" href='https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></p>
+						<!-- Profile #4 -->
+						<div class="p4" id="smith-rock">
+							<div
+								class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-cycle-timeout="0"
+								data-cycle-prev="#p4-prev"
+								data-cycle-next="#p4-next"
+							>
+								<img
+									src="media/images/oregon/smith-rock/Smith-Rock-climber.jpg"
+									alt="A rock climber"
+								/>
+								<img
+									src="media/images/oregon/smith-rock/smith-rock.jpg"
+									alt="Smith Rock mountain"
+								/>
+								<img
+									src="media/images/oregon/smith-rock/smith-rock1.jpg"
+									alt="Smith Rock Mountain"
+								/>
+								<img
+									src="media/images/oregon/smith-rock/tentSmithRock.jpg"
+									alt="Camping at Smith Rock"
+								/>
 
-            </div>
-        </div>
-        
-        <!-- Interactive State Map -->
-        <div class="state-map">
+								<div class="center">
+									<a href="#" id="p4-prev" class="prev"
+										><i
+											class="fas fa-chevron-circle-left"
+										></i
+									></a>
+									<a href="#" id="p4-next" class="next"
+										><i
+											class="fas fa-chevron-circle-right"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="bio">
+								<h2>Smith Rock</h2>
+								<p class="reservation">
+									<a href="#0" class="book-now"
+										>Request a Reservation
+										<i class="fas fa-calendar-alt"></i
+									></a>
+								</p>
+								<p class="bread-crumb">
+									Oregon
+									<i class="fas fa-chevron-right fa-xs"></i>
+									Smith Rock <br />
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2898049.4093358153!2d-121.24971100000002!3d44.81899!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1541716614774" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <!-- Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map " -->
-        </div>
-        </div>
+									<i class="fas fa-campground fa-xs"></i>
+									<i class="fas fa-mountain fa-xs"></i>
+									<i class="fas fa-sun fa-xs"></i>
+								</p>
+								<p class="description">
+									Situated in Central Oregon, home to 300 days
+									of sun a year, Smith Rock is located in an
+									outdoor adventurer’s playground. Golfing,
+									caving, paddle boarding on the Deschutes and
+									skiing Mt. Bachelor are all close by.
+									Mountain bikers can hit Phil’s Trail, while
+									cyclists can take their pick of five scenic
+									bikeways with names like Madras Mountain
+									Views and Sisters to Smith Rock. Hikers will
+									want to explore the obsidian lava flows at
+									Newberry Crater National Volcanic Monument,
+									where astronauts trained to walk on the
+									moon.
+								</p>
+							</div>
+						</div>
 
-    </div>
-    <div class="book-pop-up">
-        <form
-            action="#0"
-            method="post"
-            name="book"
-            class="booking-form"
-            id="booking-form"
-        >
-            <div class="form-top">
-                <label for="first-name">First Name:</label>
-                <input
-                    type="text"
-                    id="first-name"
-                    name="firs-name"
-                    required
-                />
+						<!-- Brick -->
+						<div class="app">
+							<p class="app-title">Join the online community</p>
+							<p class="cta">
+								Join the <span> Camping Website App </span> and
+								make connections with travelers across America!
+								<br />
+								<a
+									class="google"
+									href="https://play.google.com/store/apps/top?utm_source=na_Med&utm_medium=hasem&utm_content=Aug0917&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-ca-1001279-Med-hasem-py-Evergreen-Aug0917-Text_Search_BKWS-id_100253_%7cEXA%7cONSEM_kwid_43700018397282448&gclid=CjwKCAiA8rnfBRB3EiwAhrhBGrBi_AEBh7vMlT61dqDBohLYmpQ9u_gP4iDjfB9nVM02_BZwshYQ8BoCd8kQAvD_BwE&gclsrc=aw.ds&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+									><img
+										alt="Get it on Google Play"
+										src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+								/></a>
+							</p>
+						</div>
+					</div>
 
-                <label for="last-name">Last Name:</label>
-                <input
-                    type="text"
-                    id="last-name"
-                    name="last-name"
-                    required
-                />
+					<!-- Interactive State Map -->
+					<div class="state-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2898049.4093358153!2d-121.24971100000002!3d44.81899!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1541716614774"
+							width="100%"
+							height="100%"
+							frameborder="0"
+							style="border:0"
+							allowfullscreen
+						></iframe>
+						<!--
+							Use Styles/Scripts for the rest ... " https://developers.google.com/maps/documentation/javascript/adding-a-google-map "
+						-->
+					</div>
+				</div>
+			</div>
+			<div class="book-pop-up">
+				<form
+					action="#0"
+					method="post"
+					name="book"
+					class="booking-form"
+					id="booking-form"
+				>
+					<div class="form-top">
+						<label for="first-name">First Name:</label>
+						<input
+							type="text"
+							id="first-name"
+							name="firs-name"
+							required
+						/>
 
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required />
+						<label for="last-name">Last Name:</label>
+						<input
+							type="text"
+							id="last-name"
+							name="last-name"
+							required
+						/>
 
-                <label for="phone">Phone Number:</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required
-                />
-            </div>
+						<label for="email">Email: </label>
+						<input type="email" id="email" name="email" required />
 
-            <div class="date">
-                <label for="start">Start date:</label>
-                <label class="end-label" for="end">End date:</label> <br />
-                <input
-                    type="date"
-                    id="start"
-                    name="trip-start"
-                    value=""
-                    min="2018-01-01"
-                    max="2019-12-31"
-                />
+						<label for="phone">Phone Number:</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							required
+						/>
+					</div>
 
-                <input
-                    class="end"
-                    type="date"
-                    id="end"
-                    name="trip-end"
-                    value=""
-                    min="2018-01-01"
-                    max="2019-12-31"
-                />
-            </div>
-            <div class="camp-type">
-                <h3>Select Camp Style:</h3>
+					<div class="date">
+						<label for="start">Start date:</label>
+						<label class="end-label" for="end">End date:</label>
+						<br />
+						<input
+							type="date"
+							id="start"
+							name="trip-start"
+							value=""
+							min="2018-01-01"
+							max="2019-12-31"
+							required
+						/>
 
-                <input
-                    type="checkbox"
-                    id="tent"
-                    value="tent"
-                    name="tent"
-                    checked
-                />
-                <label for="tent">Tent</label>
+						<input
+							class="end"
+							type="date"
+							id="end"
+							name="trip-end"
+							value=""
+							min="2018-01-01"
+							max="2019-12-31"
+							required
+						/>
+					</div>
+					<div class="camp-type">
+						<h3>Select Camp Style:</h3>
 
-                <input
-                    type="checkbox"
-                    id="camper"
-                    value="camper"
-                    name="camper"
-                />
-                <label for="camper">Camper</label>
+						<input
+							type="checkbox"
+							id="tent"
+							value="tent"
+							name="tent"
+							checked
+						/>
+						<label for="tent">Tent</label>
 
-                <input type="checkbox" id="rv" value="rv" name="rv" />
-                <label for="rv">RV</label>
-            </div>
-            <div class="dog">
-                <h3>Dog Friendly:</h3>
+						<input
+							type="checkbox"
+							id="camper"
+							value="camper"
+							name="camper"
+						/>
+						<label for="camper">Camper</label>
 
-                <input
-                    type="radio"
-                    id="yes"
-                    name="radio"
-                    value="dog"
-                    checked
-                />
-                <label for="yes">Yes</label>
+						<input type="checkbox" id="rv" value="rv" name="rv" />
+						<label for="rv">RV</label>
+					</div>
+					<div class="dog">
+						<h3>Dog Friendly:</h3>
 
-                <input type="radio" id="no" name="radio" value="dog" />
-                <label for="no">No</label>
-            </div>
+						<input
+							type="radio"
+							id="yes"
+							name="radio"
+							value="dog"
+							checked
+						/>
+						<label for="yes">Yes</label>
 
-            <label class="campers" for="camper">Number of Campers:</label>
-            <select name="camper">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-            <br />
-            <div class="comments">
-                <label for="comments">Comments: </label> <br />
-                <textarea
-                    name="comments"
-                    id="comments"
-                    cols="30"
-                    rows="5"
-                ></textarea>
-                <br />
-            </div>
-            <input class="submit" type="submit" value="Submit" />
-            <input class="cancel" type="submit" value="Cancel" />
-        </form>
-    </div>
-    <div class="parks-pop-up">
-            <div class="park-list">
-                <div>
-                    <h1>Washington</h1>
-                    <ul>
-                        <li><a class="parks-cancel" href="washington-camping.html#mount-baker">Mount Baker</a></li>
-                        <li><a class="parks-cancel" href="washington-camping.html#mount-rainer">Mount Rainer</a></li>
-                        <li><a class="parks-cancel" href="washington-camping.html#olympic-park">Olympic Park</a></li>
-                        <li><a class="parks-cancel" href="washington-camping.html#spokane">Spokane</a></li>
-                    </ul>
-                </div>
-                <div><h1>Oregon</h1>
-                    <ul>
-                        <li><a class="parks-cancel" href="oregon-camping.html#canon-beach">Canon Beach</a></li>
-                        <li><a class="parks-cancel" href="oregon-camping.html#deschutes">Deschutes</a></li>
-                        <li><a class="parks-cancel" href="oregon-camping.html#honeymoon-park">Honeymoon Park</a></li>
-                        <li><a class="parks-cancel" href="oregon-camping.html#smith-rock">Smith Rock</a></li>
-                    </ul>
-                </div>
-                <div><h1>California</h1>
-                    <ul>
-                        <li><a class="parks-cancel" href="california-camping.html#big-basin">Big Basin Redwoods SP</a></li>
-                        <li><a class="parks-cancel" href="california-camping.html#death-valley">Death Valley</a></li>
-                        <li><a class="parks-cancel" href="california-camping.html#joshua-tree">Joshua Tree</a></li>
-                        <li><a class="parks-cancel" href="california-camping.html#yosemite">Yosemite</a></li>
-                    </ul>
-                </div>
-                <button class="parks-cancel">Cancel</button>
-            </div>
-    </div>
-            <div class="contact-pop-up">
-                    <div class="contact-info">
-                            <h1>Questions? Contact Us!</h1>
-                            <p>Our overall mission is to get more people outside and, more specifically, to inspire the next generation of people who are passionate about exploring AND protecting our lands. Spending time outdoors has proven health benefits and fosters a deeper connection to the awesome, wild world out there.</p>
-        
-                            <p><br>Reach out to us over the phone at <span>1.888.668.3547</span> any time from 9:00 AM to 5:30 PM Pacific Standard time.<br><br></p>
-        
-                            <div>
-                                <p>Looking for support in a different language than English? We can help you out at the following email addresses:</p>
-                                <ul>
-                                    <li>Customer Service / English : contact@compass.com</li>
-                                    <li>Spanish / Español: espanol@compass.com</li>
-                                    <li>French / Français: francais@compass.com</li>
-                                    <li>Chinese / 华语: chinese@compass.com</li>
-                                    <li>German / Deutsch: deutsch@compass.com</li>
-                                </ul>
-                            </div>
-                        <button class="contact-cancel">Cancel</button>
-                </div>
-            
-        </div>
-</main>
-        <!-- Footer -->
-    <footer>
-            <div class="copyright">
-                &copy; Alex Engel <br> & Shane Walders
-            </div>
-            <nav>
-            <ul>
-                <li>
-                    <a href="privacy.html">Privacy Policy <br> </a>
-                </li>
-                <li>
-                    <a href="terms-of-service.html">Terms & Conditions</a>
-                </li>
-            </ul>
-            </nav>
-    </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"
-></script>
-<script src="scripts/camp.js"></script>
-</body>
+						<input type="radio" id="no" name="radio" value="dog" />
+						<label for="no">No</label>
+					</div>
+
+					<label class="campers" for="camper"
+						>Number of Campers:</label
+					>
+					<select name="camper">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<br />
+					<div class="comments">
+						<label for="comments">Comments: </label> <br />
+						<textarea
+							name="comments"
+							id="comments"
+							cols="30"
+							rows="5"
+						></textarea>
+						<br />
+					</div>
+					<input class="submit" type="submit" value="Submit" />
+					<input class="cancel" type="submit" value="Cancel" />
+				</form>
+			</div>
+			<div class="parks-pop-up">
+				<div class="park-list">
+					<div>
+						<h1>Washington</h1>
+						<ul>
+							<li>
+								<a
+									class="parks-cancel"
+									href="washington-camping.html#mount-baker"
+									>Mount Baker</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="washington-camping.html#mount-rainer"
+									>Mount Rainer</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="washington-camping.html#olympic-park"
+									>Olympic Park</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="washington-camping.html#spokane"
+									>Spokane</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h1>Oregon</h1>
+						<ul>
+							<li>
+								<a
+									class="parks-cancel"
+									href="oregon-camping.html#canon-beach"
+									>Canon Beach</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="oregon-camping.html#deschutes"
+									>Deschutes</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="oregon-camping.html#honeymoon-park"
+									>Honeymoon Park</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="oregon-camping.html#smith-rock"
+									>Smith Rock</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h1>California</h1>
+						<ul>
+							<li>
+								<a
+									class="parks-cancel"
+									href="california-camping.html#big-basin"
+									>Big Basin Redwoods SP</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="california-camping.html#death-valley"
+									>Death Valley</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="california-camping.html#joshua-tree"
+									>Joshua Tree</a
+								>
+							</li>
+							<li>
+								<a
+									class="parks-cancel"
+									href="california-camping.html#yosemite"
+									>Yosemite</a
+								>
+							</li>
+						</ul>
+					</div>
+					<button class="parks-cancel">Cancel</button>
+				</div>
+			</div>
+			<div class="contact-pop-up">
+				<div class="contact-info">
+					<h1>Questions? Contact Us!</h1>
+					<p>
+						Our overall mission is to get more people outside and,
+						more specifically, to inspire the next generation of
+						people who are passionate about exploring AND protecting
+						our lands. Spending time outdoors has proven health
+						benefits and fosters a deeper connection to the awesome,
+						wild world out there.
+					</p>
+
+					<p>
+						<br />Reach out to us over the phone at
+						<span>1.888.668.3547</span> any time from 9:00 AM to
+						5:30 PM Pacific Standard time.<br /><br />
+					</p>
+
+					<div>
+						<p>
+							Looking for support in a different language than
+							English? We can help you out at the following email
+							addresses:
+						</p>
+						<ul>
+							<li>
+								Customer Service / English : contact@compass.com
+							</li>
+							<li>Spanish / Español: espanol@compass.com</li>
+							<li>French / Français: francais@compass.com</li>
+							<li>Chinese / 华语: chinese@compass.com</li>
+							<li>German / Deutsch: deutsch@compass.com</li>
+						</ul>
+					</div>
+					<button class="contact-cancel">Cancel</button>
+				</div>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="copyright">
+				&copy; Alex Engel <br />
+				& Shane Walders
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="privacy.html">Privacy Policy <br /> </a>
+					</li>
+					<li>
+						<a href="terms-of-service.html">Terms & Conditions</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+		<script src="scripts/camp.js"></script>
+	</body>
 </html>
