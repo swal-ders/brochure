@@ -122,11 +122,12 @@
 	}
 }
 
-@media only screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
 	.home {
 		.wrapper-home {
 			padding: 40px 20px;
 			grid-gap: 20px;
+
 			.cycle-slideshow {
 				grid-column-start: 1;
 				grid-column-end: 4;
@@ -142,6 +143,23 @@
 				.logos {
 					font-size: 25px;
 					// padding-bottom: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 339px) {
+
+	.home {
+		.wrapper-home{
+			.buttons{
+				.legal{
+					.priv-pol,
+					.term-con {
+						min-height: 43px;
+
+					}
 				}
 			}
 		}

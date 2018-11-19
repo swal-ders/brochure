@@ -2,6 +2,11 @@ body {
 	background-color: $body-bg-color;
 	color: $font-color;
 
-	min-height: 1400px;
-	position: relative;
+	// min-height: 1400px;
+	// position: relative;
+
+    height: auto;
+    min-height: 110vh;
+    position:relative;
+    overflow: scroll;
 }
