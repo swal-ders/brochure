@@ -298,6 +298,11 @@
 }
 
 @media (max-width: 600px) {
+	.header {
+		.logo {
+			padding-left: 10px;
+		}
+	}
 	.state-wrapper {
 		padding: 10px 10px 80px 10px;
 		.state-slogan {
@@ -309,7 +314,7 @@
 				margin: 0;
 			}
 			.search-filter {
-				visibility: hidden;
+				display: none;
 			}
 		}
 	}
@@ -332,7 +337,7 @@
 				margin: 0;
 			}
 			.search-filter {
-				visibility: hidden;
+				display: none;
 			}
 		}
 	}
@@ -356,6 +361,10 @@
 
 @media (max-width: 400px) {
 	.state-wrapper {
+		.group {
+			.profiles {
+			}
+		}
 		.state-slogan {
 			height: 90px;
 
