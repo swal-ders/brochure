@@ -149,18 +149,59 @@
 	}
 }
 
-@media (max-width: 339px) {
+@media (max-width: 600px) {
+	main {
+		.home {
+			.wrapper-home {
+				.call-to-action {
 
-	.home {
-		.wrapper-home{
-			.buttons{
-				.legal{
-					.priv-pol,
-					.term-con {
-						min-height: 43px;
+					.slogan{
+						font-size: 300%;
+					}
 
+					.sub-header {
+						font-size: 200%;
+					}
+
+					.sub-p {
+						font-size: 110%;
 					}
 				}
+			}
+		}
+
+		div {
+			.map-slogan{
+				font-size: 300%;
+			}
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	main {
+		.home {
+			.wrapper-home {
+				.call-to-action {
+
+					.slogan{
+						font-size: 250%;
+					}
+
+					.sub-header {
+						font-size: 125%;
+					}
+
+					.sub-p {
+						font-size: 100%;
+					}
+				}
+			}
+		}
+
+		div {
+			.map-slogan{
+				font-size: 25 0%;
 			}
 		}
 	}
