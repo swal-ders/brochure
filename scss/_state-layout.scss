@@ -3,462 +3,370 @@
 
 // }
 .state-wrapper {
-    // margin: 0 10% 0 10%;
-    max-width: 1500px;
-    height: auto;
-    margin: auto;
-    padding: 0 30px 0 30px;
-    background-color: rgba(209, 161, 4, 0.692);
-    border: 7px solid whitesmoke;
-    // margin-bottom: 50px;
+	// margin: 0 10% 0 10%;
+	max-width: 1500px;
+	height: auto;
+	margin: auto;
+	padding: 0 30px 0 30px;
+	background-color: rgba(209, 161, 4, 0.692);
+	border: 7px solid whitesmoke;
+	// margin-bottom: 50px;
 
-    
-    .state-slogan {
-        padding-top: 2.5%;
+	.state-slogan {
+		padding-top: 2.5%;
 
+		h1 {
+			font-family: $heading-font;
+			font-size: 300%;
+		}
 
-        h1 {
-            font-family: $heading-font;
-            font-size: 300%;
-        }
+		p {
+			font-family: $heading-font;
+			margin: 0 0 2% 180px;
+			font-size: 140%;
+		}
 
-        p {
-           font-family: $heading-font;
-           margin: 0 0 2% 180px;
-           font-size: 140%;
-        }
+		.search-filter {
+			display: flex;
+			justify-content: space-evenly;
+			margin-bottom: 1.5%;
+			max-width: 678px;
 
-        .search-filter {
-            display: flex;
-            justify-content: space-evenly;
-            margin-bottom: 1.5%;
-            max-width: 678px;
+			button {
+				margin: 10px;
+				flex-basis: 100%;
+				font-family: $body-font;
+				text-transform: uppercase;
+				font-weight: bold;
+				@include link;
+				padding: 10px 26px;
+				border: none;
+				border-radius: 5px;
+			}
+		}
+	}
 
-            button {
-                margin: 10px;
-                flex-basis: 100%;
-                font-family: $body-font;
-                text-transform: uppercase;
-                font-weight: bold;
-                @include link;
-                padding: 10px 26px;
-                border: none;
-                border-radius: 5px;
-            }
+	// Styling for all of the location profiles
 
+	.group {
+		display: grid;
+		height: auto;
+		grid-template-columns: repeat(2, 5fr);
+		grid-template-rows: auto;
+		column-gap: 5%;
+		grid-template-areas: 'a b';
 
-        }
-    }
+		padding-bottom: 5%;
 
-// Styling for all of the location profiles
+		.profiles {
+			grid-area: a;
+			display: grid;
+			column-gap: 5%;
+			row-gap: 2.5%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, auto);
+			grid-template-areas:
+				'a b'
+				'c d'
+				'e e';
 
-    .group {
-        display: grid;
-        height: auto;
-        grid-template-columns: repeat(2, 5fr);
-        grid-template-rows: auto;
-        column-gap: 5%;
-        grid-template-areas:
-        'a b';
+			div:nth-child(1) {
+				grid-area: a;
+			}
 
-        padding-bottom: 10%;
+			div:nth-child(2) {
+				grid-area: b;
+			}
 
-        .profiles {
-            grid-area: a;
-            display: grid;
-            column-gap: 5%;
-            row-gap: 2.5%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, auto);
-            grid-template-areas:
-            'a b'
-            'c d'
-            'e e';
+			div:nth-child(3) {
+				grid-area: c;
+			}
 
-            div:nth-child(1){
-                grid-area: a;
-            }
+			div:nth-child(4) {
+				grid-area: d;
+			}
 
-            div:nth-child(2){
-                grid-area: b;
-            }
+			div:nth-child(5) {
+				grid-area: e;
+			}
 
-            div:nth-child(3){
-                grid-area: c;
-            }
+			.bio {
+				position: relative;
 
-            div:nth-child(4){
-                grid-area: d;
-            }
+				h2 {
+					padding: 7% 0 0 0;
+					font-size: 150%;
+					font-family: $heading-font;
+				}
 
-            div:nth-child(5){
-                grid-area: e;
-            }
+				p {
+					font-family: $body-font;
+					text-indent: 10px;
+				}
 
-            .bio {
-                position: relative;
+				.reservation {
+					font-size: 90%;
+					font-weight: bold;
+					font-style: italic;
+					position: absolute;
+					top: 2px;
+					right: 0px;
 
-                h2 {
-                    padding: 7% 0 0 0;
-                    font-size: 150%;
-                    font-family: $heading-font;
-                }
+					a {
+						text-decoration: none;
+						color: black;
 
-                p {
-                    font-family: $body-font;
-                    text-indent: 10px;
-                }
+						&:active {
+							color: #226d81;
+						}
+					}
 
-                .reservation {
-                    font-size: 90%;
-                    font-weight: bold;
-                    font-style: italic;
-                    position: absolute;
-                    top: 2px;
-                    right: 0px;
+					.reservation:visited {
+						color: black;
+					}
+				}
 
-                    a {
-                        text-decoration: none; 
-                        color: black;
+				.bread-crumb {
+					text-align: right;
+					color: rgba(0, 0, 0, 0.616);
+					font-size: 75%;
+					font-style: italic;
+					position: absolute;
+					top: 55px;
+					right: 30px;
+				}
 
-                        &:active{
-                            color:  #226d81;
-                        }
-                    }
-    
-    
-                    .reservation:visited{
-                        color: black;
-                    }
-                }
-                
-                .bread-crumb{
-                    text-align: right;
-                    color: rgba(0, 0, 0, 0.616);
-                    font-size: 75%;
-                    font-style: italic;
-                    position: absolute;
-                    top: 55px;
-                    right: 30px;
-                }
+				.description {
+					padding: 30px 0 0 0;
+				}
+			}
 
-                .description {
-                    padding: 30px 0 0 0;
-                }
-            }
+			.cycle-slideshow {
+				position: relative;
 
-            .cycle-slideshow{
-    
-                position: relative;
-            
-                .center a {
-                    color: rgba(245, 245, 245, 0.452);
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    z-index: 101;
+				.center a {
+					color: rgba(245, 245, 245, 0.452);
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					z-index: 101;
 
-                    &:first-child {
-                        left: 8px;
-                    }
-                    &:last-child {
-                        right: 8px;
-                    }
+					&:first-child {
+						left: 8px;
+					}
+					&:last-child {
+						right: 8px;
+					}
 
-                    &:hover{
-                        color: #226d81;
-                    }
-                }
-            }  
-            
-            .app { 
-                width: 100%;
-                .app-title {
-                    padding-top: 20px;
-                    font-family: $heading-font;
-                    text-transform: capitalize;
-                    font-size: 200%;
-                    text-align: center;
-                }
+					&:hover {
+						color: #226d81;
+					}
+				}
+			}
 
-                .cta {
-                    padding: 15px 0 0 10px;
-                    font-family: $body-font;
-                    font-size: 125%;
-                    text-align: center;
+			.app {
+				width: 100%;
+				.app-title {
+					padding-top: 20px;
+					font-family: $heading-font;
+					text-transform: capitalize;
+					font-size: 200%;
+					text-align: center;
+				}
 
-                    span {
-                        
-                        text-transform: capitalize;
-                        font-weight: bold;
+				.cta {
+					padding: 15px 0 0 10px;
+					font-family: $body-font;
+					font-size: 125%;
+					text-align: center;
 
-                    }
-                }
+					span {
+						text-transform: capitalize;
+						font-weight: bold;
+					}
+				}
 
-                .google {
-                    margin: auto;
-                    text-align: center;
-                    // margin: auto;
-                    img {
-                        max-width: 300px;
-                        height: auto;
-                        // margin: 10px 28%;
-                        // margin: auto;
-                    }
-                }
-            }
-        }
+				.google {
+					margin: auto;
+					text-align: center;
+					// margin: auto;
+					img {
+						max-width: 300px;
+						height: auto;
+						// margin: 10px 28%;
+						// margin: auto;
+					}
+				}
+			}
+		}
 
+		// Styling for the map
 
-// Styling for the map
-
-        .state-map {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            // padding-left: 15%;
-        } 
-    }
+		.state-map {
+			position: -webkit-sticky; /* Safari */
+			position: sticky;
+			top: 0;
+			height: 100vh;
+			// padding-left: 15%;
+		}
+	}
 }
 
-@media (max-width: 1480px){
+@media (max-width: 1480px) {
+	.state-wrapper {
+		padding-bottom: 100px;
+		.state-slogan {
+			.search-filter {
+				max-width: 100%;
+			}
+		}
 
-    .state-wrapper {
-        padding-bottom: 120px;
-        .state-slogan {
-    
-            .search-filter {
-            
-                max-width: 100%;
-            }
-        }
-        
-        .group{
+		.group {
+			display: grid;
+			padding: 0;
 
-            display: grid;
+			.profiles {
+				display: grid;
+				row-gap: 1.5%;
 
-            .profiles{
-                
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: repeat(5, auto);
+				grid-template-areas:
+					'a'
+					'b'
+					'c'
+					'd'
+					'e';
 
-                display: grid;
-                row-gap: 1.5%;
+				div:nth-child(1) {
+					grid-area: a;
+					width: 100%;
+				}
 
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(5, auto);
-                grid-template-areas:
-                'a'
-                'b'
-                'c'
-                'd'
-                'e';
+				div:nth-child(2) {
+					grid-area: b;
+					width: 100%;
+				}
 
-                div:nth-child(1){
-                    grid-area: a;
-                    width: 100%;
-                }
-    
-                div:nth-child(2){
-                    grid-area: b;
-                    width: 100%;
-                }
-    
-                div:nth-child(3){
-                    grid-area: c;
-                    width: 100%;
-                }
-    
-                div:nth-child(4){
-                    grid-area: d;
-                    width: 100%;
-                }
-    
-                div:nth-child(5){
-                    grid-area: e;
-                    width: 100%;
-                }
-            }
-        }   
-    }
+				div:nth-child(3) {
+					grid-area: c;
+					width: 100%;
+				}
+
+				div:nth-child(4) {
+					grid-area: d;
+					width: 100%;
+				}
+
+				div:nth-child(5) {
+					grid-area: e;
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 700px) {
+	.state-wrapper {
+		padding-bottom: 100px;
 
-    .state-wrapper{
-        padding-bottom: 140px;
-        
-        .group{
-            display: block;
-            padding-bottom: 100px;
-            
-            // grid-template-columns: repeat(1, 1fr);
-            // grid-template-rows: repeat(5, 1fr);
-            // grid-template-areas:
-            // 'a'
-            // 'b'
-            // 'c'
-            // 'd'
-            // 'e';
-            
-            .profiles{
+		.group {
+			display: block;
 
-                // display: grid;
-                // grid-template-columns: repeat(1, 1fr);
-                // grid-template-rows: repeat(5, 1fr);
-                // grid-template-areas:
-                // 'a'
-                // 'b'
-                // 'c'
-                // 'd'
-                // 'e';
+			.profiles {
+				.bio {
+					.bread-crumb {
+						padding-top: 10px;
+					}
 
-                .bio {
+					h2 {
+						font-size: 200%;
+					}
 
-                    .bread-crumb {
-                        padding-top: 10px;
-                    }
+					.description {
+						margin-bottom: 5%;
+					}
+				}
+			}
 
-                    h2{
-                        font-size: 200%;
-                    }
-
-                    .description {
-                        margin-bottom: 5%;
-                    }
-                }
-            }
-
-            .state-map {
-                
-                display: none;
-            } 
-        }
-    }
+			.state-map {
+				display: none;
+			}
+		}
+	}
 }
-
-// @media (max-width: 600px) {
-
-//     .state-wrapper{
-//         margin: 0;
-
-//         .group{
-
-//             .profiles{
-
-//                 .cycle-slideshow{
-//                     width: 100%;
-//                 }
-    
-//                 .bio{
-//                     padding: 0 10% 0 10%;
-
-//                     .reservation {
-
-//                         right: 10px;
-//                     }
-//                 }
-
-//                 .app {
-//                     padding: 10% 10% 10% 10%;
-//                 }
-//             }
-//         }   
-//     }
-// }
-
-
-
 
 @media (max-width: 600px) {
-.state-wrapper{
-    padding: 10px 10px 150px 10px;
-    .state-slogan {
-        height: 120px;
-        h1 {
-            font-size: 250%;
-        }
-        p{
-            margin: 0;
-        }
-        .search-filter {
-            visibility: hidden;
-        }
-    }
-
-}
+	.state-wrapper {
+		padding: 10px 10px 80px 10px;
+		.state-slogan {
+			height: 120px;
+			h1 {
+				font-size: 250%;
+			}
+			p {
+				margin: 0;
+			}
+			.search-filter {
+				visibility: hidden;
+			}
+		}
+	}
 }
 
 @media (max-width: 500px) {
-    .state-wrapper{
-        padding: 10px 10px 150px 10px;
-        border: none;
-        border-top: 7px solid whitesmoke;
-        .state-slogan {
-            height: 105px;
-            .state{
-                h1{
-                    font-size: 250%;
-    
-                }
-            }
+	.state-wrapper {
+		padding: 10px 10px 80px 10px;
+		border: none;
+		border-top: 7px solid whitesmoke;
+		.state-slogan {
+			height: 105px;
+			.state {
+				h1 {
+					font-size: 250%;
+				}
+			}
 
-            p{
-                margin: 0;
-            }
-            .search-filter {
-                visibility: hidden;
-            }
-        }
-    
-    }
+			p {
+				margin: 0;
+			}
+			.search-filter {
+				visibility: hidden;
+			}
+		}
+	}
 }
 @media (max-width: 465px) {
-
-    .state-wrapper{
-        
-        .state-slogan {
-            // height: 140px;
-
-            // .state {
-            //     font-family: $heading-font;
-            //     font-size: 250%;
-            // }
-
-            .group{
-                
-                .profiles{
-
-                    .bio {
-
-                        .bread-crumb {
-                            top: 75px;
-                            right: 50px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	.state-wrapper {
+		.state-slogan {
+			.group {
+				.profiles {
+					.bio {
+						.bread-crumb {
+							top: 75px;
+							right: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 400px) {
+	.state-wrapper {
+		.state-slogan {
+			height: 90px;
 
-    .state-wrapper{
-        
-        .state-slogan {
-            height: 90px;
+			.state {
+				font-family: $heading-font;
+				font-size: 175%;
+			}
 
-            .state {
-                font-family: $heading-font;
-                font-size: 175%;
-                // padding-left: 5%;
-            }
-
-            p {
-
-                margin: 0 0 2% 0px;
-
-            }
-        }
-    }
+			p {
+				margin: 0 0 2% 0px;
+			}
+		}
+	}
 }
