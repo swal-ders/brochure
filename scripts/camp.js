@@ -1,19 +1,35 @@
-$('.book-now').click(function() {
-	$('.book-pop-up').toggleClass('book-pop');
+$('.book-now').click(function(evt) {
+	evt.stopPropagation();
+	isFormOn = true;
+	$('.book-pop-up').addClass('book-pop');
 });
 
-$(document).click(function(event) {
-	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".form-top").length) {
-	  $("body").find(".book-now").toggleClass("book-pop");
+const $formPopUp = $('#form-pop-up');
+let isFormOn = false;
+
+let counter = 0;
+
+$formPopUp.addClass('foo');
+
+$formPopUp.on('click', '*', function(evt) {
+	counter++;
+	$('body').addClass(`foo-${counter}`);
+	evt.stopPropagation();
+});
+
+$('body').click(function(evt) {
+	if (isFormOn === true) {
+		isFormOn = false;
+		$('.book-pop-up').removeClass('book-pop');
 	}
-  });
+});
 
 $('.cancel').click(function() {
-	$('.book-pop-up').toggleClass('book-pop');
+	isFormOn = false;
+	$('.book-pop-up').removeClass('book-pop');
 });
 
-$('.bs').click(function(){
+$('.bs').click(function() {
 	window.location = 'index.html#map';
 });
 
@@ -25,16 +41,15 @@ $('.parks-cancel').click(function() {
 	$('.parks-pop-up').toggleClass('park-pop');
 });
 
-$('.priv-pol').click(function(){
+$('.priv-pol').click(function() {
 	window.location = 'privacy.html';
 });
 
-$('.term-con').click(function(){
+$('.term-con').click(function() {
 	window.location = 'terms-of-service.html';
 });
 
-
-// 
+//
 
 $('.bcu').click(function() {
 	$('.contact-pop-up').toggleClass('contact-pop');
