@@ -9,6 +9,8 @@
 	z-index: 100;
 	visibility: hidden;
     position: fixed;
+    overflow: scroll;
+
 
     &.park-pop {
 		transition: all 0.4s ease-in;

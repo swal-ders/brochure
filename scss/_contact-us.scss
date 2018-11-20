@@ -8,6 +8,8 @@
 	background-color: rgba(223, 227, 223, 0.42);
 	visibility: hidden;
 	position: fixed;
+	overflow: scroll;
+
 	z-index: 100300000000;
 
 	&.contact-pop {
