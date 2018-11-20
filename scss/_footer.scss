@@ -14,6 +14,11 @@ footer {
 
 	.copyright {
 		flex-grow: 4;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
 	}
 
 	ul {
