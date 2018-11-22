@@ -61,8 +61,7 @@
 		.profiles {
 			grid-area: a;
 			display: grid;
-			column-gap: 5%;
-			row-gap: 2.5%;
+			grid-gap: 30px;
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, auto);
 			grid-template-areas:
@@ -228,8 +227,7 @@
 			column-gap: 5%;
 			.profiles {
 				display: grid;
-				row-gap: 1.5%;
-				column-gap: 5%;
+				grid-gap: 30px;
 				grid-template-columns: repeat(1, 1fr);
 				grid-template-rows: repeat(5, auto);
 				grid-template-areas:
@@ -286,7 +284,7 @@
 					}
 
 					.description {
-						margin-bottom: 5%;
+						// margin-bottom: 5%;
 					}
 				}
 			}
