@@ -13,11 +13,11 @@ $formPopUp.addClass('foo');
 
 $formPopUp.on('click', '*', function(evt) {
 	counter++;
-	$('body').addClass(`foo-${counter}`);
+	$('main').addClass(`foo-${counter}`);
 	evt.stopPropagation();
 });
 
-$('body').click(function(evt) {
+$('main').click(function(evt) {
 	if (isFormOn === true) {
 		isFormOn = false;
 		$('.book-pop-up').removeClass('book-pop');
